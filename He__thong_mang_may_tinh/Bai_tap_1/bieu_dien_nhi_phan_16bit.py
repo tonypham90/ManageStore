@@ -35,75 +35,59 @@ def run(number,maxnumber):
     else:
         run = True;
     return run
-#Tao choi array data
-# def binary(bit):
-#     binarynumber = [];
-#     i = 0
-#     #Tao choi array data
-#     while i < bit:
-#         i += 1
-#         binarynumber.append(0)
-#     return binarynumber
-
-# # kiem tra ket qua dau vao
-# print(len(binarynumber));
-# print(binarynumber);
-
-# Ham so in chuoi data
-def printbinary(number,binarynumber,run):
-    if run:
-        a = ""
-        n=0
-        for n in range (0,len(binarynumber)):
-            n+=1
-            a += str(binarynumber[n-1]);
-            if n % 4 == 0 and n > 2:
-                a += " ";
-            print(a)
-        print(f'Chuoi binary cua so {number} la \n binary: [{a}]')
-    else:
-        print(f'Gia tri ban chon da nam ngoai vung co the chuyen doi vui long chon gia tri trong khoan [0, {maxnumber}]')
-
+# In gia tri tu list
+def printbinary(number,binarynumber):
+    a = ""
+    n=0
+    while n < len(binarynumber):
+        a += str(binarynumber[n]);
+        if (n+1) % 4 == 0 and (n+1) <len(binarynumber):
+            a += " ";
+        n += 1
+        # print(a)
+    print(f'Chuoi binary cua so {number} la \n binary: [{a}]')
 # Ham chuyen doi digit to binary:
-def convertobinary(number,bitnumber,run):
+def convertobinary(number,bitnumber):
      # So nguyen
     a = number;
     # so du
     r = 0;
     binary = []
-    if run:
-        while len(binary) < bitnumber:
-            while a > 0:
-                if a>=2:
-                    r = a%2;
-                else:
-                    r = a
-                print (r)
-                a = a-r
-                a = int(a/2);
-                binary.insert(0,r);
-                print (binary)
+    while len(binary) < bitnumber:
+        while a > 0:
+            if a>=2:
+                r = a%2;
+            else:
+                r = a
+            # print (r)
+            a = a-r
+            a = int(a/2);
+            binary.insert(0,r);
+            # print (binary)
+        if len(binary) < bitnumber:
             binary.insert(0,0)
-            # print(binary)
+        # print(f'binary la {binary}')
+        # print(f'Len cua binary la{len(binary)}')
     return binary;
 def start():
+    clear()
+    print("Chuong trinh chuyen doi so nguyen khong am thanh nhi phan")
     play = True
     while play is True:
-        clear()
+       
         bit = byteinput();
         print (f'in gia tri bit = {bit}')
         maxvalue = maxnumber(bit);
         number = int(input(f'Gia tri can chuyen doi qua binary khong giau: '));
         check = run(number,maxvalue);
         if check:
-            binarystr = convertobinary(number,bit,check);
-            printbinary(number,binarystr,check);
+            binarystr = convertobinary(number,bit);
+            printbinary(number,binarystr);
         ask = input(f'Ban co muon kiem tra so khac khong? (y/n)').lower()
-        print (ask)
+        # print (ask)
         if ask == "y":
             print(f'ask is True')
             play = True
-
         else:
             print (f'Cam on ban da su dung chuong trinh')
             play = False
