@@ -11,7 +11,7 @@ def clear():
 clear()
 # Tinh so bit và tra lai so bit co the chay du lieu
 def byteinput():
-    bytedata = int(input(f'Nhập số byte của dữ liệu '));
+    bytedata = int(input(f'Nhập số byte của dữ liệu (1byte = 8bit) '));
 
     # Tạo chuỗi bit ban đầu của dữ liệu
 
@@ -53,10 +53,12 @@ def run(number,maxnumber):
 def printbinary(number,binarynumber,run):
     if run:
         a = ""
-        for i in binarynumber:
-            if len(a) % 4 == 0:
+        n=0
+        for n in range (0,len(binarynumber)):
+            n+=1
+            a += str(binarynumber[n-1]);
+            if n % 4 == 0 and n > 2:
                 a += " ";
-            a += str(i);
             print(a)
         print(f'Chuoi binary cua so {number} la \n binary: [{a}]')
     else:
@@ -72,10 +74,15 @@ def convertobinary(number,bitnumber,run):
     if run:
         while len(binary) < bitnumber:
             while a > 0:
-                r = a%2;
-                a = round(a/2);
+                if a>=2:
+                    r = a%2;
+                else:
+                    r = a
+                print (r)
+                a = a-r
+                a = int(a/2);
                 binary.insert(0,r);
-                # print (binary)
+                print (binary)
             binary.insert(0,0)
             # print(binary)
     return binary;
