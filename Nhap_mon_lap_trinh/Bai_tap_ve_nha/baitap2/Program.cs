@@ -6,7 +6,17 @@ namespace baitap2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int r,N,i;
+            i=0;
+            r=0;
+            Console.WriteLine("nhap so lan N ");
+            N = int.Parse(Console.ReadLine());
+            while (i<N)
+            {
+                r += i*i;
+            }
+            Console.WriteLine($"Ket qua {r}");
+
         }
     }
 }

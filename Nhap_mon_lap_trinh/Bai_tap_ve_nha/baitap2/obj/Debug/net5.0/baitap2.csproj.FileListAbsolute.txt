@@ -1,0 +1,15 @@
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap2/bin/Debug/net5.0/baitap2.deps.json
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap2/bin/Debug/net5.0/baitap2.runtimeconfig.json
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap2/bin/Debug/net5.0/baitap2.runtimeconfig.dev.json
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap2/bin/Debug/net5.0/baitap2.dll
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap2/bin/Debug/net5.0/ref/baitap2.dll
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap2/bin/Debug/net5.0/baitap2.pdb
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap2/obj/Debug/net5.0/baitap2.csproj.AssemblyReference.cache
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap2/obj/Debug/net5.0/baitap2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap2/obj/Debug/net5.0/baitap2.AssemblyInfoInputs.cache
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap2/obj/Debug/net5.0/baitap2.AssemblyInfo.cs
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap2/obj/Debug/net5.0/baitap2.csproj.CoreCompileInputs.cache
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap2/obj/Debug/net5.0/baitap2.dll
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap2/obj/Debug/net5.0/ref/baitap2.dll
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap2/obj/Debug/net5.0/baitap2.pdb
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap2/obj/Debug/net5.0/baitap2.genruntimeconfig.cache
