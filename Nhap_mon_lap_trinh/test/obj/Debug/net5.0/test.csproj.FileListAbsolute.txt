@@ -1,0 +1,15 @@
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/test/bin/Debug/net5.0/test.deps.json
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/test/bin/Debug/net5.0/test.runtimeconfig.json
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/test/bin/Debug/net5.0/test.runtimeconfig.dev.json
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/test/bin/Debug/net5.0/test.dll
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/test/bin/Debug/net5.0/ref/test.dll
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/test/bin/Debug/net5.0/test.pdb
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/test/obj/Debug/net5.0/test.csproj.AssemblyReference.cache
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/test/obj/Debug/net5.0/test.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/test/obj/Debug/net5.0/test.AssemblyInfoInputs.cache
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/test/obj/Debug/net5.0/test.AssemblyInfo.cs
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/test/obj/Debug/net5.0/test.csproj.CoreCompileInputs.cache
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/test/obj/Debug/net5.0/test.dll
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/test/obj/Debug/net5.0/ref/test.dll
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/test/obj/Debug/net5.0/test.pdb
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/test/obj/Debug/net5.0/test.genruntimeconfig.cache

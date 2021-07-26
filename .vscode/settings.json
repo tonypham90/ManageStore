@@ -1,8 +1,0 @@
-{
-    "python.testing.pytestArgs": [
-        "He__thong_mang_may_tinh"
-    ],
-    "python.testing.unittestEnabled": false,
-    "python.testing.nosetestsEnabled": false,
-    "python.testing.pytestEnabled": true
-}
