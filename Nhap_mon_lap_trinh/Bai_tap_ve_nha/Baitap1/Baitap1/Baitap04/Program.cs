@@ -1,23 +1,24 @@
 ﻿using System;
 
-namespace Baitap2
+namespace Baitap04
 {
     class Program
     {
         // ReSharper disable once UnusedParameter.Local
         static void Main(string[] args)
         {
-            Console.WriteLine("Bài 2: Tính S(n) = 1^2 + 2^2 + … + n^2");
+            Console.WriteLine("Bài 4: Tính S(n) = ½ + ¼ + … + 1/2n");
             double s = 0, n;
-            int i = 0;
+            double i = 0;
             Console.WriteLine("Nhap so lan tinh n");
             n = int.Parse(Console.ReadLine()!);
             while (i < n)
             {
                 i++;
-                s = Math.Pow(n, 2);
+                // ReSharper disable once PossibleLossOfFraction
+                s += 1/(2*i);
             }
-            Console.WriteLine($"Ket qua bai toan la: {s}");
+            Console.WriteLine($"Ket qua bai toan la: {s:F}");
         }
     }
 }
