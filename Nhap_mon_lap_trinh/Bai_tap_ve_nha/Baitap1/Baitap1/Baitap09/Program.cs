@@ -7,7 +7,7 @@ namespace Baitap09
         // ReSharper disable once UnusedParameter.Local
         static void Main(string[] args)
         {
-            Console.WriteLine("Bài 8: Tính S(n) = ½ + ¾ + 5/6 + … + 2n + 1/ 2n + 2");
+            Console.WriteLine("Tính T(n) = 1 x 2 x 3…x N");
             double s = 1, n;
             double i = 0;
             Console.WriteLine("Nhap so lan tinh n");
@@ -15,7 +15,7 @@ namespace Baitap09
             while (i < n)
             {
                 i++;
-                Console.WriteLine($"gia tri i {i}");
+                //Console.WriteLine($"gia tri i {i}");
                 // ReSharper disable once PossibleLossOfFraction
                 s = s * i;
             }

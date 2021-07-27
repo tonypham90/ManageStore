@@ -1,0 +1,15 @@
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap1/baitap1/Baitap01/bin/Debug/net5.0/Baitap01.deps.json
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap1/baitap1/Baitap01/bin/Debug/net5.0/Baitap01.runtimeconfig.json
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap1/baitap1/Baitap01/bin/Debug/net5.0/Baitap01.runtimeconfig.dev.json
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap01/bin/Debug/net5.0/Baitap01.dll
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap1/baitap1/Baitap01/bin/Debug/net5.0/ref/Baitap01.dll
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap01/bin/Debug/net5.0/Baitap01.pdb
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap01/obj/Debug/net5.0/Baitap01.csproj.AssemblyReference.cache
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap01/obj/Debug/net5.0/Baitap01.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap01/obj/Debug/net5.0/Baitap01.AssemblyInfoInputs.cache
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap01/obj/Debug/net5.0/Baitap01.AssemblyInfo.cs
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap01/obj/Debug/net5.0/Baitap01.csproj.CoreCompileInputs.cache
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap01/obj/Debug/net5.0/Baitap01.dll
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap01/obj/Debug/net5.0/ref/Baitap01.dll
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap01/obj/Debug/net5.0/Baitap01.pdb
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap1/baitap1/Baitap01/obj/Debug/net5.0/Baitap01.genruntimeconfig.cache
