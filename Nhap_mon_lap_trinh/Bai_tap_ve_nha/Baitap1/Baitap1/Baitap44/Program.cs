@@ -16,8 +16,9 @@ namespace Baitap44
                 int i = 0,result=0;
                 while (i< len)
                 {
-                    char letter = n[i];
-                    result += Convert.ToInt32(n[i]);
+                    string letter = Convert.ToString(n[i]);
+                    Console.WriteLine(letter);
+                    result += Convert.ToInt32(letter);
                     Console.WriteLine(result);
                     i++;
                 
