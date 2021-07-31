@@ -80,6 +80,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baitap72", "Baitap72\Baitap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baitap 101", "Baitap 101\Baitap 101.csproj", "{7953DD22-05D1-49BD-8B15-12E31D04EA3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baitap82", "Baitap82\Baitap82.csproj", "{C49BFBF0-8CC6-494E-9EE1-2CD37209CCFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -246,5 +248,9 @@ Global
 		{7953DD22-05D1-49BD-8B15-12E31D04EA3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7953DD22-05D1-49BD-8B15-12E31D04EA3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7953DD22-05D1-49BD-8B15-12E31D04EA3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C49BFBF0-8CC6-494E-9EE1-2CD37209CCFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C49BFBF0-8CC6-494E-9EE1-2CD37209CCFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C49BFBF0-8CC6-494E-9EE1-2CD37209CCFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C49BFBF0-8CC6-494E-9EE1-2CD37209CCFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
