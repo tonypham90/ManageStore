@@ -82,6 +82,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baitap 101", "Baitap 101\Ba
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baitap82", "Baitap82\Baitap82.csproj", "{C49BFBF0-8CC6-494E-9EE1-2CD37209CCFD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baitap99", "Baitap99\Baitap99.csproj", "{59A47ECC-EF12-4A53-B7E6-4612DF0C3038}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baitap111", "Baitap111\Baitap111.csproj", "{6124EDDE-CE9A-44EE-AF74-A8F5DE8B9431}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -252,5 +256,13 @@ Global
 		{C49BFBF0-8CC6-494E-9EE1-2CD37209CCFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C49BFBF0-8CC6-494E-9EE1-2CD37209CCFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C49BFBF0-8CC6-494E-9EE1-2CD37209CCFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59A47ECC-EF12-4A53-B7E6-4612DF0C3038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59A47ECC-EF12-4A53-B7E6-4612DF0C3038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59A47ECC-EF12-4A53-B7E6-4612DF0C3038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59A47ECC-EF12-4A53-B7E6-4612DF0C3038}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6124EDDE-CE9A-44EE-AF74-A8F5DE8B9431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6124EDDE-CE9A-44EE-AF74-A8F5DE8B9431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6124EDDE-CE9A-44EE-AF74-A8F5DE8B9431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6124EDDE-CE9A-44EE-AF74-A8F5DE8B9431}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

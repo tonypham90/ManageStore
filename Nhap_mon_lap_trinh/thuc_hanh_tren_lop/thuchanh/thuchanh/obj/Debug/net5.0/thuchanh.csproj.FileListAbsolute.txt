@@ -1,0 +1,15 @@
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/thuchanh/bin/Debug/net5.0/thuchanh.deps.json
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/thuchanh/bin/Debug/net5.0/thuchanh.runtimeconfig.json
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/thuchanh/bin/Debug/net5.0/thuchanh.runtimeconfig.dev.json
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/thuchanh/bin/Debug/net5.0/thuchanh.dll
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/thuchanh/bin/Debug/net5.0/ref/thuchanh.dll
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/thuchanh/bin/Debug/net5.0/thuchanh.pdb
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/thuchanh/obj/Debug/net5.0/thuchanh.csproj.AssemblyReference.cache
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/thuchanh/obj/Debug/net5.0/thuchanh.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/thuchanh/obj/Debug/net5.0/thuchanh.AssemblyInfoInputs.cache
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/thuchanh/obj/Debug/net5.0/thuchanh.AssemblyInfo.cs
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/thuchanh/obj/Debug/net5.0/thuchanh.csproj.CoreCompileInputs.cache
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/thuchanh/obj/Debug/net5.0/thuchanh.dll
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/thuchanh/obj/Debug/net5.0/ref/thuchanh.dll
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/thuchanh/obj/Debug/net5.0/thuchanh.pdb
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/thuchanh/obj/Debug/net5.0/thuchanh.genruntimeconfig.cache
