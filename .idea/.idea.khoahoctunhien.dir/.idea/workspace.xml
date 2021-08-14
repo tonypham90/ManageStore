@@ -1,49 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b18427b4-6cea-4d0c-abf8-7d2306fb7941" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap111/Baitap111.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap111/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap111/obj/Baitap111.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap111/obj/Baitap111.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap111/obj/Baitap111.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap111/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap111/obj/Debug/net5.0/Baitap111.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap111/obj/Debug/net5.0/Baitap111.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap111/obj/Debug/net5.0/Baitap111.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap111/obj/Debug/net5.0/Baitap111.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap111/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap111/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap111/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap111/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/Baitap99.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/bin/Debug/net5.0/Baitap99.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/bin/Debug/net5.0/Baitap99.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/bin/Debug/net5.0/Baitap99.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/bin/Debug/net5.0/Baitap99.runtimeconfig.dev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/bin/Debug/net5.0/Baitap99.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/bin/Debug/net5.0/ref/Baitap99.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/obj/Baitap99.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/obj/Baitap99.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/obj/Baitap99.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/obj/Debug/net5.0/Baitap99.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/obj/Debug/net5.0/Baitap99.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/obj/Debug/net5.0/Baitap99.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/obj/Debug/net5.0/Baitap99.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/obj/Debug/net5.0/Baitap99.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/obj/Debug/net5.0/Baitap99.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/obj/Debug/net5.0/Baitap99.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/obj/Debug/net5.0/Baitap99.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/obj/Debug/net5.0/Baitap99.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/obj/Debug/net5.0/Baitap99.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/obj/Debug/net5.0/ref/Baitap99.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap99/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap1.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/Baitap1/Baitap1/Baitap1.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.khoahoctunhien.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.khoahoctunhien.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/bin/Debug/net5.0/bai20.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/bin/Debug/net5.0/bai20.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/bin/Debug/net5.0/bai20.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/bin/Debug/net5.0/bai20.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/obj/Debug/net5.0/bai20.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/obj/Debug/net5.0/bai20.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/obj/Debug/net5.0/bai20.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/obj/Debug/net5.0/bai20.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +21,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/thuchanh/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap2/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Nhap_mon_lap_trinh/test/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -72,6 +40,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -85,6 +57,8 @@
       <workItem from="1627308444662" duration="801000" />
       <workItem from="1627309257182" duration="63000" />
       <workItem from="1628325523092" duration="179000" />
+      <workItem from="1628332107935" duration="19000" />
+      <workItem from="1628924765089" duration="736000" />
     </task>
     <servers />
   </component>
