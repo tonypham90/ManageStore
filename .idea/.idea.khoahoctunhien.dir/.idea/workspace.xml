@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b18427b4-6cea-4d0c-abf8-7d2306fb7941" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.khoahoctunhien.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.khoahoctunhien.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/bin/Debug/net5.0/bai20.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/bin/Debug/net5.0/bai20.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/bin/Debug/net5.0/bai20.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/bin/Debug/net5.0/bai20.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/obj/Debug/net5.0/bai20.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/obj/Debug/net5.0/bai20.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/obj/Debug/net5.0/bai20.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/obj/Debug/net5.0/bai20.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/projectonclass/projectonclass.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/projectonclass/tinh_array.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/projectonclass/tinh_array.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

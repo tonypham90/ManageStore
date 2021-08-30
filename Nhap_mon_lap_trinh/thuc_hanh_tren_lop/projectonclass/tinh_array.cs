@@ -4,7 +4,7 @@ namespace projectonclass
 {
     public class tinh_array
     {
-        public static int[] nhapmang(string ghichu)
+        public static int[] Nhapmang(string ghichu)
         {
             int[] a;
             Console.WriteLine(ghichu);
@@ -22,16 +22,16 @@ namespace projectonclass
 
         public static int max_value(int[] a)
         {
-            int max_num = 0;
+            int maxNum = 0;
             for (int i = 0; i < a.Length; i++)
             {
-                if (a[i] > max_num)
+                if (a[i] > maxNum)
                 {
-                    max_num = a[i];
+                    maxNum = a[i];
                 }
             }
 
-            return max_num;
+            return maxNum;
         }
     }
 }
