@@ -2,7 +2,7 @@ using System;
 
 namespace thuchanh
 {
-    public class xulysonguyen
+    public class Xulysonguyen
     {
         public int Kiemtrauoc(int n)
         {
@@ -42,11 +42,12 @@ namespace thuchanh
             return check;
         }
 
-        public static void Hoanvi (ref int a,ref int b)
+        public static int Hoanvi (ref int a,ref int b)
         {
             var t = b;
             b = a;
             a = t;
+            return 0;
         }
     }
 }
