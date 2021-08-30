@@ -1,0 +1,15 @@
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/projectonclass/bin/Debug/net5.0/projectonclass.deps.json
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/projectonclass/bin/Debug/net5.0/projectonclass.runtimeconfig.json
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/projectonclass/bin/Debug/net5.0/projectonclass.runtimeconfig.dev.json
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/projectonclass/bin/Debug/net5.0/projectonclass.dll
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/projectonclass/bin/Debug/net5.0/ref/projectonclass.dll
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/projectonclass/bin/Debug/net5.0/projectonclass.pdb
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/projectonclass/obj/Debug/net5.0/projectonclass.csproj.AssemblyReference.cache
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/projectonclass/obj/Debug/net5.0/projectonclass.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/projectonclass/obj/Debug/net5.0/projectonclass.AssemblyInfoInputs.cache
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/projectonclass/obj/Debug/net5.0/projectonclass.AssemblyInfo.cs
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/projectonclass/obj/Debug/net5.0/projectonclass.csproj.CoreCompileInputs.cache
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/projectonclass/obj/Debug/net5.0/projectonclass.dll
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/projectonclass/obj/Debug/net5.0/ref/projectonclass.dll
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/projectonclass/obj/Debug/net5.0/projectonclass.pdb
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/projectonclass/obj/Debug/net5.0/projectonclass.genruntimeconfig.cache
