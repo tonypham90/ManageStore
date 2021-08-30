@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b18427b4-6cea-4d0c-abf8-7d2306fb7941" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.khoahoctunhien.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.khoahoctunhien.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/bin/Debug/net5.0/bai20.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/bin/Debug/net5.0/bai20.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/bin/Debug/net5.0/bai20.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/bin/Debug/net5.0/bai20.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/obj/Debug/net5.0/bai20.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/obj/Debug/net5.0/bai20.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/obj/Debug/net5.0/bai20.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/bai20/obj/Debug/net5.0/bai20.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +16,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/thuchanh/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap2/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Nhap_mon_lap_trinh/test/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Nhap_mon_lap_trinh/Bai_tap_ve_nha/baitap2/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/thuchanh/thuchanh/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1vr7bXlEpjy4GtCwz6NqysuLPdp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -59,6 +54,8 @@
       <workItem from="1628325523092" duration="179000" />
       <workItem from="1628332107935" duration="19000" />
       <workItem from="1628924765089" duration="736000" />
+      <workItem from="1630330663903" duration="11000" />
+      <workItem from="1630331054917" duration="75000" />
     </task>
     <servers />
   </component>
