@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/Bai_tap_mang_1_chieu/Bai_tap_mang_1_chieu.csproj",
-      "projectName": "Bai_tap_mang_1_chieu",
-      "projectPath": "/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/Bai_tap_mang_1_chieu/Bai_tap_mang_1_chieu.csproj",
+      "projectUniqueName": "/Users/tonypham/Documents/GitHub/khoahoctunhien/khoahoctunhien.csproj",
+      "projectName": "khoahoctunhien",
+      "projectPath": "/Users/tonypham/Documents/GitHub/khoahoctunhien/khoahoctunhien.csproj",
       "packagesPath": "/Users/tonypham/.nuget/packages/",
-      "outputPath": "/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/Bai_tap_mang_1_chieu/obj/",
+      "outputPath": "/Users/tonypham/Documents/GitHub/khoahoctunhien/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tonypham/.nuget/NuGet/NuGet.Config"
