@@ -1,10 +1,12 @@
 using System;
+using System.ComponentModel.Design;
 
 namespace Bai_tap_mang_v2
 {
     public class array_basic
-    {
-        public static void create_array()
+    { 
+        // nhom class tao mang 1 chieu
+        public static double[] double_array( bool random )
         {
             Console.Write($"Nhap so phan tu trong array: ");
             int n = int.Parse(Console.ReadLine()!);
@@ -13,21 +15,52 @@ namespace Bai_tap_mang_v2
             Console.Write($"Nhap gia tri lon nhat:  ");
             int max = int.Parse(Console.ReadLine()!);
             double[] newarray = new double[n];
-            for (int i = 0; i < newarray.Length; i++)
+            double element;
+            for (int i = 0; i < n; i++)
             {
+                
                 Random rd = new Random();
-                double randnum = rd.Next(min,max);
+                element = rd.Next(min, max);
                 double point = rd.NextDouble();
-                if (randnum + point > max)
+                if (element + point > max)
+                    {
+                        element = max;
+                    }
+                    else
+                    {
+                        element += point;
+                    }
+                
+                newarray[i] = element;
+            } 
+            return newarray;
+        }
+        public static int[] int_array(bool rand)
+        {
+            Console.Write($"Nhap so phan tu trong array: ");
+            int n = int.Parse(Console.ReadLine()!);
+            Console.Write($"Nhap gia tri nho nhat: ");
+            int min = int.Parse(Console.ReadLine()!);
+            Console.Write($"Nhap gia tri lon nhat:  ");
+            int max = int.Parse(Console.ReadLine()!);
+            int[] newarray = new int[n];
+            Random rd = new Random();
+            int element;
+            for (int i = 0; i < n; i++)
+            {
+                if (rand)
                 {
-                    randnum = max;
+                    element = rd.Next(min, max);
                 }
                 else
                 {
-                    randnum += point;
+                    Console.WriteLine($"Nhap gia tri thu {i}: ");
+                    element = int.Parse(Console.ReadLine()!);
                 }
+                
+                newarray[i] = element;
             }
-            // return newarray;
+            return newarray;
         }
     }
 }
