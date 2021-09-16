@@ -1,0 +1,5 @@
+/Users/tonypham/Documents/GitHub/khoahoctunhien/obj/Debug/net5.0/khoahoctunhien.csproj.AssemblyReference.cache
+/Users/tonypham/Documents/GitHub/khoahoctunhien/obj/Debug/net5.0/khoahoctunhien.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tonypham/Documents/GitHub/khoahoctunhien/obj/Debug/net5.0/khoahoctunhien.AssemblyInfoInputs.cache
+/Users/tonypham/Documents/GitHub/khoahoctunhien/obj/Debug/net5.0/khoahoctunhien.AssemblyInfo.cs
+/Users/tonypham/Documents/GitHub/khoahoctunhien/obj/Debug/net5.0/khoahoctunhien.csproj.CoreCompileInputs.cache
