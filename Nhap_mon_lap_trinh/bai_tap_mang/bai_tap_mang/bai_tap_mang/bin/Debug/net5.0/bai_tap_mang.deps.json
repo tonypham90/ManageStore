@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "bai_tap_mang/1.0.0": {
+        "runtime": {
+          "bai_tap_mang.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "bai_tap_mang/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

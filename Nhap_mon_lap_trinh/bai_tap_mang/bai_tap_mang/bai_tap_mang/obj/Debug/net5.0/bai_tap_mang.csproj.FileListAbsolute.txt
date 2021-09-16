@@ -1,0 +1,15 @@
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/Debug/net5.0/bai_tap_mang.csproj.AssemblyReference.cache
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/Debug/net5.0/bai_tap_mang.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/Debug/net5.0/bai_tap_mang.AssemblyInfoInputs.cache
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/Debug/net5.0/bai_tap_mang.AssemblyInfo.cs
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/Debug/net5.0/bai_tap_mang.csproj.CoreCompileInputs.cache
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/bai_tap_mang/bai_tap_mang/bai_tap_mang/bin/Debug/net5.0/bai_tap_mang.deps.json
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/bai_tap_mang/bai_tap_mang/bai_tap_mang/bin/Debug/net5.0/bai_tap_mang.runtimeconfig.json
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/bai_tap_mang/bai_tap_mang/bai_tap_mang/bin/Debug/net5.0/bai_tap_mang.runtimeconfig.dev.json
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/bai_tap_mang/bai_tap_mang/bai_tap_mang/bin/Debug/net5.0/bai_tap_mang.dll
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/bai_tap_mang/bai_tap_mang/bai_tap_mang/bin/Debug/net5.0/ref/bai_tap_mang.dll
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/bai_tap_mang/bai_tap_mang/bai_tap_mang/bin/Debug/net5.0/bai_tap_mang.pdb
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/Debug/net5.0/bai_tap_mang.dll
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/Debug/net5.0/ref/bai_tap_mang.dll
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/Debug/net5.0/bai_tap_mang.pdb
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/Debug/net5.0/bai_tap_mang.genruntimeconfig.cache

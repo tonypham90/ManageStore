@@ -8,12 +8,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3f2f37-458b-447b-907c-9114da380c75" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Bai_tap_mang_1_chieu/.idea/.idea.Bai_tap_mang_1_chieu/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai_tap_mang_1_chieu/.idea/.idea.Bai_tap_mang_1_chieu/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai_tap_mang_1_chieu/.idea/.idea.Bai_tap_mang_1_chieu/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bai_tap_mang_1_chieu/.idea/.idea.Bai_tap_mang_1_chieu/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bai_tap_mang_1_chieu/toan_so_nguyen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Bai_tap_mang_1_chieu/toan_so_nguyen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectonclass.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/projectonclass.sln.DotSettings.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap_mang/bai_tap_mang/.idea/.idea.bai_tap_mang/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap_mang/bai_tap_mang/.idea/.idea.bai_tap_mang/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap_mang/bai_tap_mang/bai_tap_mang.sln.DotSettings.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap_mang/bai_tap_mang/bai_tap_mang/array_analysis.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap_mang/bai_tap_mang/bai_tap_mang/number_analysis.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/Debug/net5.0/bai_tap_mang.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/Debug/net5.0/bai_tap_mang.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/Debug/net5.0/bai_tap_mang.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/Debug/net5.0/bai_tap_mang.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/Debug/net5.0/bai_tap_mang.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/bai_tap_mang.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/bai_tap_mang.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/bai_tap_mang.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap_mang/bai_tap_mang/bai_tap_mang/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.projectonclass/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.projectonclass/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +59,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="ReSpellerSettingsId" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -81,6 +94,9 @@
       <workItem from="1630139265999" duration="64000" />
       <workItem from="1630139835629" duration="3056000" />
       <workItem from="1630328363484" duration="402000" />
+      <workItem from="1630330682452" duration="349000" />
+      <workItem from="1630333000641" duration="124000" />
+      <workItem from="1630333328687" duration="90000" />
     </task>
     <task id="LOCAL-00001" summary="complited">
       <created>1630142290495</created>
