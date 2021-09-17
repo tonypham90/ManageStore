@@ -1,0 +1,206 @@
+Chương 5: Mảng một chiều
+ok Bài 122: Viết hàm tìm giá trị lớn nhất trong mảng 1 chiều các số thực
+Bài 123: Viết hàm tìm 1 vị trí mà giá trị tại vị trí đó là giá trị nhỏ nhất trong mảng 1 chiều các số nguyên
+Bài 124: Viết hàm kiểm tra trong mảng các số nguyên có tồn tại giá trị chẵn nhỏ hơn 2004 hay không
+Bài 125: Viết hàm đếm số lượng số nguyên tố nhỏ hơn 100 trong mảng
+Bài 126: Viết hàm tính tổng các giá trị âm trong mảng 1 chiều các số thực
+Bài 127: Viết hàm sắp xếp mảng 1 chiều các số thực tăng dần
+Kỹ thuật nhập, xuất mảng
+Bài 128 + 130: Viết hàm nhập, xuất mảng 1 chiều các số thực
+Bài 129 + 131: Viết hàm nhập, xuất mảng 1 chiều các số nguyên
+Bài 132: Viết hàm liệt kê các giá trị chẵn trong mảng 1 chiều các số nguyên
+Bài 133: Viết hàm liệt kê các vị trí mà giá trị tại đó là giá trị âm trong mảng 1 chiều các số thực
+Kỹ thuật đặt lính canh, các bài tập cơ bản
+Bài 134: Viết hàm tìm giá trị lớn nhất trong mảng 1 chiều các số thực
+Bài 135: Viết hàm tìm giá trị dương đầu tiên trong mảng 1 chiều các số thực. Nếu mảng không có giá trị dương thì trả về -1
+Bài 136: Tìm số chẵn cuối cùng trong mảng 1 chiều các số nguyên. Nếu mảng không có giá trị chẵn thì trả về -1
+Bài 137: Tìm 1 vị trí mà giá trị tại vị trí đó là giá trị nhỏ nhất trong mảng 1 chiều các số thực
+Bài 138: Tìm vị trí của giá trị chẵn đầu tiên trong mảng 1 chiều các số nguyên. Nếu mảng không có giá trị chẵn thì sẽ trả về -1
+Bài 139: Tìm vị trí số hoàn thiện cuối cùng trong mảng 1 chiều các số nguyên. Nếu mảng không có số hoàn thiện thì trả về giá trị  -1
+Bài 140: Hãy tìm giá trị dương nhỏ nhất trong mảng 1 chiều các số thực. Nếu mảng không có giá trị dương thì sẽ trả về -1
+Bài 141: Hãy tìm vị trí giá trị dương nhỏ nhất trong mảng 1 chiều các số thực. Nếu mảng không có giá trị dương thì trả về  -1
+Các bài tập luyện tập
+Bài 142: Tìm giá trị nhỏ nhất trong mảng 1 chiều số thực
+Bài 143: Viết hàm tìm số chẵn đầu tiên trong mảng các số nguyên. Nếu mảng không có giá trị chẵn thì trả về  -1
+Bài 144: Tìm số nguyên tố đầu tiên trong mảng 1 chiều các số nguyên. Nếu mảng không có số nguyên tố thì trả về  – 1
+Bài 145: Tìm số hoàn thiện đầu tiên trong mảng 1 chiều số nguyên. Nếu mảng không có số hoàn thiện thì trả về  -1
+Bài 146: Tìm giá trị âm đầu tiên trong mảng 1 chiều các số thực. Nếu mảng không có giá trị âm thì trả về -1
+Bài 147: Tìm số dương cuối cùng trong mảng số thực. Nếu mảng không có giá trị dương thì trả về  -1
+Bài 148: Tìm số nguyên tố cuối cùng trong mảng 1 chiều các số nguyên. Nếu mảng không có số nguyên tố thì trả về  -1
+Bài 149: Tìm số hoàn thiện cuối cùng trong mảng 1 chiều các số nguyên. Nếu mảng không có số hoàn thiện thì trả về  -1
+Bài 150: Hãy tìm giá trị âm lớn nhất trong mảng 1 chiều các số thực. Nếu mảng không có giá trị âm thì trả về  -1
+Bài 151: Hãy tìm số nguyên tố lớn nhất trong mảng 1 chiều các số nguyên. Nếu mảng không có số nguyên tố thì trả về -1
+Bài 152: Hãy tìm số hoàn thiện nhỏ nhất trong mảng 1 chiều các số nguyên. Nếu mảng không có số hoàn thiện thì trả về -1
+Bài 153: Hãy tìm giá trị chẵn nhỏ nhất trong mảng 1 chiều các số nguyên. Nếu mảng không có số chẵn thì trả về -1
+Bài 154: Hãy tìm vị trí giá trị âm nhỏ nhất trong mảng các số thực. Nếu mảng không có số âm thì trả về -1
+Bài tập luyện tập tư duy
+Bài 155: Hãy tìm giá trị trong mảng các số thực xa giá trị x nhất
+Bài 156: Hãy tìm giá trị trong mảng các số thực gần giá trị x nhất
+Bài 157: Cho mảng 1 chiều các số thực, hãy tìm đoạn [a, b] sao cho đoạn này chứa tất cả các giá trị trong mảng
+Bài 158: Cho mảng 1 chiều các số thực, hãy tìm giá trị x sao cho đoạn [-x, x] chứa tất cả các giá trị trong mảng
+Bài 159: Cho mảng 1 chiều các số thực, hãy tìm giá trị đầu tiên lớn hơn giá trị 2003. Nếu mảng không có giá trị thỏa điều kiện trên thì trả về  -1
+Bài 160: Cho mảng 1 chiều các số thực, hãy tìm giá trị âm cuối cùng lớn hơn giá trị -1. Nếu mảng không có giá trị thỏa điều kiện trên thì trả về -1
+Bài 161: Cho mảng 1 chiều các số nguyên, hãy tìm giá trị đầu tiên nằm trong khoảng [x, y] cho trước. Nếu mảng không có giá trị thỏa điều kiện trên thì trả về -1
+Bài 162: Cho mảng 1 chiều các số thực. Hãy viết hàm tìm một vị trí trong mảng thỏa 2 điều kiện: có 2 giá trị lân cận và giá trị tại đó bằng tích 2 giá trị lân cận. Nếu mảng không tồn tại giá trị như vậy thì trả về giá trị -1
+Bài 163: Tìm số chính phương đầu tiên trong mảng 1 chiều các số nguyên
+Bài 164: Cho mảng 1 chiều các số nguyên. Hãy tìm giá trị đầu tiên thỏa mãn tính chất số gánh
+Bài 165: Cho mảng 1 chiều các số nguyên. Hãy tìm giá trị đầu tiên có chữ số đầu tiên là chữ số lẻ
+Bài 166: Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm giá trị đầu tiên trong mảng có dạng 2^k. Nếu mảng không có giá trị dạng 2k thì hàm sẽ trả về 0
+Bài 167: Hãy tìm giá trị thỏa điều kiện toàn chữ số lẻ và là giá trị lớn nhất thỏa điều kiện ấy trong mảng 1 chiều các số nguyên. Nếu mảng không có giá trị thỏa điều kiện trên thì trả về 0
+Bài 168: Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm giá trị lớn nhất trong mảng có dạng 5^k. Nếu mảng khong tồn tại giá trị 5^k thì hàm sẽ trả về 0
+Bài 169 (*): Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm số chẵn nhỏ nhất lớn hơn mọi giá trị có trong mảng
+Bài 170: Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm số nguyên tố nhỏ nhất lớn hơn mọi giá trị có trong mảng
+Bài 171: Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm ước chung lớn nhất của tất cả các phần tử trong mảng
+Bài 172: Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm bội chung nhỏ nhất của tất cả các phần tử trong mảng
+Bài 173 (*): Cho mảng 1 chiều các số nguyên. Hãy  viết hàm tìm chữ số xuất hiện ít nhất trong mảng
+Bài 174 (*): Cho mảng số thực có nhiều hơn 2 giá trị và các giá trị trong mảng khác nhau từng đôi một. Hãy viết hàm liệt kê tất cả các cặp giá trị (a, b) trong mảng thỏa điều kiện a <= b
+Bài 175 (*): Cho mảng số thực có nhiều hơn 2 giá trị và các giá trị trong mảng khác nhau từng đôi một. Hãy viết hàm tìm 2 giá trị gần nhau nhất trong mảng (Lưu ý: Mảng có các giá trị khác nhau từng đôi một còn có tên là mảng phân biệt)
+Các bài tập tìm kiếm và liệt kê
+Bài 176: Hãy liệt kê các số âm trong mảng 1 chiều các số thực
+Bài 177: Hãy liệt kê các số trong mảng 1 chiều các số thực thuộc đoạn [x, y] cho trước
+Bài 178: Hãy liệt kê các số chẵn trong mảng 1 chiều các số nguyên thuộc đoạn [x, y] cho trước (x, y là các số nguyên)
+Bài 179: Hãy liệt kê các giá trị trong mảng mà thỏa điều kiện lớn hơn giá trị tuyệt đối của giá trị đứng liền sau nó
+Bài 180: Hãy liệt kê các giá trị trong mảng mà thỏa điều kiện nhỏ hơn trị tuyệt đối của giá trị đứng liền sau nó và lớn hơn trị tuyệt đối của giá trị đứng liền trước nó
+Bài 181: Cho mảng 1 chiều các số nguyên. Hãy viết hàm liệt kê các giá trị chẵn có ít nhất 1 lân cận cũng là giá trị chẵn
+Bài 182: Cho mảng 1 chiều các số thực. Hãy viết hàm liệt kê tất cả các giá trị trong mảng có ít nhất 1 lận cận trái dấu với nó
+Bài 183: Hãy liệt kê các vị trí mà giá trị tại đó là giá trị tại đó là giá trị lớn nhất trong mảng 1 chiều các số thực
+Bài 184: Hãy liệt kê các vị trí mà giá trị tại đó là số nguyên tố trong mảng 1 chiều các số nguyên
+Bài 185: Hãy liệt kê các vị trí mà giá trị tại đó là số chính phương trong mảng 1 chiều các số nguyên
+Bài 186: Hãy liệt kê các vị trí trong mảng 1 chiều các số thực mà giá trị tại đó bằng giá trị âm đầu tiên trong mảng
+Bài 187: Hãy liệt kê các vị trí mà giá trị tại các vị trí đó bằng giá trị dương nhỏ nhất trong mảng 1 chiều các số thực
+Bài 188: Hãy liệt kê các vị trí chẵn lớn nhất trong mảng 1 chiều các số nguyên
+Bài 189: Hãy liệt kê các giá trị trong mảng 1 chiều các số nguyên có chữ số đầu tiên là chữ số lẻ
+Bài 190: Hãy liệt kê các giá trị có toàn chữ số lẻ trong mảng 1 chiều các số nguyên
+Bài 191: Hãy liệt kê các giá trị cực đại trong mảng 1 chiều các số thực. Một phần tử được gọi là cực đại khi lớn hơn các phần tử lân cận
+Bài 192: Hãy liệt kê các  giá trị trong mảng 1 chiều các số nguyên có chữ số đầu tiên là số chẵn
+Bài 193: Cho mảng 1 chiều các số nguyên. Hãy viết hàm liệt kê các giá trị trong mảng có dạng 3^k. Nếu mảng không có giá trị đó thì trả về 0
+Bài 194: Cho mảng 1 chiều các số nguyên có nhiều hơn 2 giá trị. Hãy viết hàm liệt kê các cặp giá trị gần nhau nhất
+Bài 196: Liệt kê các số âm trong mảng 1 chiều các số nguyên
+Bài 197: Hãy liệt kê các giá trị trong mảng các số nguyên có chữ số đầu tiên là chữ số lẻ
+Bài 198: Hãy liệt kê các vị trí mà giá trị tại đó là giá trị lớn nhất trong mảng 1 chiều các số thực
+Bài 199: Hãy liệt kê các vị trí mà giá trị tại đó là số nguyên tố trong mảng 1 chiều các số nguyên
+Kỹ thuật tính tổng
+Bài 200: Tính tổng các phần tử trong mảng
+Bài 201: Tính tổng các giá trị dương trong mảng 1 chiều các số thực
+Bài 202: Tính tổng các giá trị có chữ số đầu tiên là chữ số lẻ trong mảng 1 chiều các số nguyên
+Bài 203: Tinh tổng các chữ số có chữ số hàng chục là 5 trong mảng 1 chiều các số nguyên
+Bài 204: Tính tổng các giá trị lớn hơn giá trị đứng liền trước nó trong mảng 1 chiều các số thực
+Bài 205: Tính tổng các giá trị lớn hơn trị tuyệt đối của giá trị đứng liền sau nó trong mảng 1 chiều các số thực
+Bài 206: Tính tổng các giá trị lớn hơn các giá trị xung quanh trong mảng 1 chiều các số thực
+ Lưu ý: Một giá trị trong mảng có tối đa 2 giá trị xung quang
+Bài 207: Tính tổng các phần tử “cực trị” trong mảng. Một phần tử được gọi là cực trị khi nó
+lớn hơn hoặc nhỏ hơn các phần tử xung quanh nó
+Bài 208: Tính tổng các giá trị chính phương trong mảng 1 chiều các số nguyên
+Bài 209: Tính tổng các giá trị đối xứng trong mảng các số nguyên
+Bài 210: Tính tổng các giá trị có chữ số đầu tiên là chữ số chẵn trong mảng các số nguyên
+Bài 211: Tính trung bình cộng các số nguyên tố trong mảng 1 chiều các số nguyên
+Bài 212: Tính trung bình cộng các số dương trong mảng 1 chiều các số thực
+Bài 213: Tính trung bình cộng các giá trị lớn hơn giá trị x trong mảng 1 chiều các số thực
+Bài 214: Tính trung bình nhân các giá trị dương có trong mảng 1 chiều các số thực
+Bài 215 (*): Tính khoảng các trung bình giữa các giá trị trong mảng
+Kỹ thuật đếm
+Bài 216: Đếm số lượng số chẵn trong mảng
+Bài 217: Đếm số dương chia hết cho 7 trong mảng
+Bài 218: Đếm số đối xứng trong mảng
+Bài 219: Đếm số lần xuất hiện của giá trị x trong mảng
+Bài 220: Đếm số lượng giá trị tận cùng bằng 5 trong mảng
+Bài 221: Cho biết sự tương quan giữa số lượng chẵn và lẻ trong mảng
+Hàm trả về 1 trong 3 giá trị -1, 0, 1
+Giá trị -1 là chẵn nhiều hơn lẻ
+Giá trị 0 là chẵn bằng lẻ
+Giá trị 1 là chẵn ít hơn lẻ
+Bài 222: Đếm phần tử lớn hơn hay nhỏ hơn phần tử xung quanh mảng
+Bài 223: Đếm số nguyên tố trong mảng
+Bài 224: Đếm số hoàn thiện trong mảng
+Bài 225: Đếm số lượng giá trị lớn nhất có trong mảng
+Bài 226: Hãy xác định số lượng phần tử kề nhau mà cả 2 đều chẵn
+Bài 227: Hãy xác định số lượng phần tử kề nhau mà cả 2 trái dấu
+Bài 228: Hãy xác định số lượng phần tử kề nhau mà số đứng sau cùng dấu số đứng trước
+và có giá trị tuyệt đối lớn hơn
+Bài 229: Đếm số lượng các giá trị phân biệt có trong mảng
+Bài 230: Liệt kê tần suất xuất hiện các giá trị trong mảng (mỗi giá trị liệt kê 1 lần)
+Bài 231: Hãy liệt kê các giá trị xuất hiện trong mảng 1 chiều các số nguyên đúng 1 lần
+Bài 232: Hãy liệt kê các giá trị xuất hiện trong dãy quá 1 lần. Lưu ý: mỗi giá trị liệt kê 1 lần
+Bài 233: Hãy liệt kê tần suất của các giá trị xuất hiện trong dãy. Lưu ý: mỗi giá trị liệt kêt tần suất 1 lần
+Bài 234: Cho 2 mảng a, b. Đếm số lượng giá trị chỉ xuất hiện 1 trong 2 mảng
+Bài 235: Cho 2 mảng a, b. Liệt kê các giá trị chỉ xuất hiện 1 trong 2 mảng
+Bài 236(*): Cho 2 mảng a, b. Hãy cho biết số lần xuất hiện của mảng a trong mảng b
+Bài 237 + 238(*): Hãy liệt kê các giá trị có số lần xuất hiện nhiều nhất trong mảng
+Bài 239: Hãy đếm số lượng số nguyên tố phân biệt trong mảng
+Bài 240: Kiểm tra mảng có giá trị 0 hay không? Có trả về 1, không có trả về 0
+Bài 241: Kiểm tra mảng có 2 giá trị 0 liên tiếp hay không? Có trả về 1, không có trả về 0
+Bài 242: Kiểm tra mảng có số chẵn hay không? Có trả về 1, không có trả về 0
+Bài 243: Kiểm tra mảng có số nguyên tố hay không? Có trả về 1, không có trả về 0
+Bài 244: Kiểm tra mảng thỏa tính chất: mảng không có số hoàn thiện lớn hơn 256. Có trả về 1, không có trả về 0
+Bài 245: Kiểm tra mảng có toàn số chẵn không? Có trả về 1, không có trả về 0
+Bài 246: Kiểm tra mảng có đối xứng không? Có trả về 1, không có trả về 0
+Bài 247: Ta định nghĩa 1 mảng có tính chất lẻ, khi tổng của 2 phần tử liên tiếp luôn là lẻ. Kiểm tra mảng có tính chất lẻ hay không
+Bài 248: Kiểm tra mảng có tăng dần hay không
+Bài 249: Kiểm tra mảng có giảm dần hay không
+Bài 250: Hảy cho biết các phần tử trong mảng có lập thành cấp số cộng hay không? Nếu có chỉ ra công sai d
+Bài 251: Hãy cho biết các phần tử trong mảng có bằng nhau không
+Bài 252: Ta định nghĩa 1 mảng được gọi là dạng song, khi phần tử có trị số I lớn hơn hoặc nhỏ hơn 2 phần tử xung quanh. Hãy viết hàm kiểm tra mảng có dạng sóng không
+Bài 253: Hãy cho biết tất cả các phần tử trong mảng a có nằm trong mảng b không
+Bài 254: Hãy đếm giá trị trong mảng thỏa: lớn hơn tất cả các giá trị đứng đằng trước nó
+Kỹ thuật sắp xếp
+Bài 255: Sắp xếp mảng tăng dần
+Bài 256: Sắp xếp mảng giảm dần
+Bài 257: Sắp xếp lẻ tăng dần nhưng giá trị khác giữ nguyên vị trí
+Bài 258: Sắp xếp số nguyên tố tăng dần nhưng giá trị khác giữ nguyên vị trí
+Bài 259: Sắp xếp số hoàn thiện giảm dần nhưng giá trị khác giữ nguyên vị trí
+Bài 260: Cho 2 mảng a, b. Hãy cho biết mảng b có phải là hoán vị của mảng a không
+Bài 261: Sắp xếp số dương tăng dần, các số âm giữ nguyên vị trí
+Bài 262: Sắp xếp chẵn, lẻ tăng dần nhưng vị trí tương đối giữa các số không thay đổi
+Bài 263: Sắp xếp số dương tăng dần, âm giảm dần. Vị trí tương đối không thay đổi
+Bài 264: Trộn 2 mảng đã tăng thành 1 mảng được sắp xếp tăng
+Bài 265: Cho 2 mảng tăng. Hãy trộn thành 1 mảng giảm dần
+Kỹ thuật thêm
+Bài 266: Thêm 1 phần tử x vào mảng tại vị trí k
+Bài 267: Viết hàm nhập mảng sao cho khi nhập xong thì giá trị trong mảng sắp xếp giảm dần
+Bài 268: Hãy tạo mảng b từ mảng a các giá trị 0, 1 để mảng có tính chẵn lẻ
+Bài 269: Thêm x vào trong mảng tăng nhưng vẫn giữ nguyên tính tăng của mảng
+Bài 270: Nhập mảng sau khi nhập xong đã tự sắp xếp tăng dần
+Kỹ thuật xóa
+Bài 271: Xóa các phần tử có chỉ số k trong mảng
+Bài 272: Hãy xóa tất cả số lớn nhất trong mảng các số thực
+Bài 273: Xóa tất cả các số âm trong mảng
+Bài 274: Xóa tất cả các số chẵn trong mảng
+Bài 275: Xóa tất cả các số chính phương trong mảng
+Bài 276: Xóa tất cả các phần tử trùng với x
+Bài 277: Xóa tất cả các số nguyên tố trong mảng
+Bài 278: Xóa tất cả các phần tử trùng nhau trong mảng và chỉ giữ lại duy nhất 1 phần tử
+Bài 279: Xóa tất cả các phần tử xuất hiện nhiều hơn 1 lần trong mảng
+Kỹ thuật xử lý mảng
+Bài 280: Hãy đưa số 1 về đầu mảng
+Bài 281: Hãy đưa chẵn về đầu, lẻ về cuối, phần tử 0 nằm giữa mảng
+Bài 282: Đưa các số chia hết cho 3 về đầu mảng
+Bài 283: Đảo ngược mảng ban đầu
+Bài 284: Đảo ngược thứ tự các số chẵn trong mảng
+Bài 285: Đảo ngược thứ tự số dương trong mảng
+Bài 286: Dịch trái xoay vòng k phần tử trong mảng
+Bài 287: Dịch phải xoay vòng k phần tử trong mảng
+Bài 288: Hãy xuất phần tử trong mảng theo yêu cầu: chẵn vàng, lẻ trắng
+Bài 289: Xuất mảng: chẵn nằm trên 1 mảng, lẻ nằm trên hàng tiếp theo
+Bài 290: Đảo ngược thứ tự số chẵn và lẻ trong mảng nhưng giữ vị trí tương đối
+Bài 291: Biến đổi mảng bằng cách thay giá trị max = giá trị min và ngược lại
+Bài 292: Biến đổi mảng  số thực bằng cách thay tất cả phần tử trong mảng bằng số nguyên gần nó nhất (giống làm tròn)
+Kỹ thuật xử lý mảng con
+Bài 293: Liệt kê tất cả các mảng con
+Bài 294: Liệt kê mảng con có độ dài lớn hơn 2 phần tử
+Bài 295: Liệt kê dãy con tăng dần
+Bài 296: Liệt kê dãy con tăng và chứa giá trị lớn nhất
+Bài 297: Tính tổng từng mảng con tăng
+Bài 298: Đếm mảng con tăng có độ dài lớn hơn 1
+Bài 299: Liệt kê dãy con toàn dương và có độ dài lớn hơn 1
+Bài 300: Đếm mảng con giảm
+Bài 301: Cho biết mảng a có phải là mảng con của mảng b không
+Bài 302: Đếm số lần xuất hiện của mảng a trong mảng b
+Bài 303: Tìm dãy con toàn dương dài nhất
+Bài 304(*): Cho mảng a, số nguyên M. Tìm 1 mảng con sao cho tổng các phần tử bằng M
+Bài 305(*): Tìm dãy con toàn dương có tổng lớn nhất
+Bài 306: Tìm mảng con có tổng lớn nhất
+Xây dựng mảng
+Bài 307: Tạo mảng b chỉ chứa giá trị lẻ từ mảng a
+Bài 308: Tạo mảng b chỉ chứa giá trị âm từ mảng a
+Bài 309: Tạo mảng b sao cho b[i] = tổng các phần tử lân cận với a[i] trong mảng a
+Bài 310: Tạo mảng b chỉ chứa số nguyên tố từ mảng a
