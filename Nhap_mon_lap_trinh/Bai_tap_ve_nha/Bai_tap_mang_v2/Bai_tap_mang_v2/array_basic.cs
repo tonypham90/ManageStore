@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Bai_tap_mang_v2
 {
@@ -65,6 +66,43 @@ namespace Bai_tap_mang_v2
                 newarray[i] = element;
             }
             return newarray;
+        }
+
+        public static int[,] IntMatrix(bool rand)
+        {
+            Random rd = new Random();
+            int minValue = 0, maxValue=0,value=0;
+            Console.Write("Tao ma tran voi so cot: ");
+            int column = int.Parse(Console.ReadLine()!);
+            Console.Write("Tao ma tran voi so dong: ");
+            int row = int.Parse(Console.ReadLine()!);
+            int[,] matrixA = new int[row, column];
+            if (rand)
+            {
+                Console.Write("Nhap gia tri nho nhat: ");
+                minValue = int.Parse(Console.ReadLine()!);
+                Console.Write("Nhap gia tri lon nhat:  ");
+                maxValue = int.Parse(Console.ReadLine()!);
+            }
+            for (int i = 0; i < matrixA.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrixA.GetLength(1); j++)
+                {
+                    if (rand)
+                    {
+                        value = manipulate.rand_IntValue(minValue, maxValue);
+                    }
+                    else
+                    {
+                        Console.Write($"Nhap gia tri tai vi tri [{i},{j}]: ");
+                        value = int.Parse(Console.ReadLine()!);
+                    }
+                    matrixA[i,j] = value;
+                }
+            }
+            manipulate.print_intMatrix(matrixA);
+
+            return matrixA;
         }
     }
 }

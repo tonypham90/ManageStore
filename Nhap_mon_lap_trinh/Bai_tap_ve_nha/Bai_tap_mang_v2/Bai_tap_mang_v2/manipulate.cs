@@ -1,10 +1,33 @@
 using System;
-using Microsoft.VisualBasic;
 
 namespace Bai_tap_mang_v2
 {
     public class manipulate
     {
+        public static int rand_IntValue(int min, int max) /*tao gia tri so nguyen tu dong*/
+        {
+            var rd = new Random();
+            int value = rd.Next(min, max);
+            return value;
+        }
+
+        public static double rand_doubleValue(int min, int max) /*tao gia tri so thuc tu dong*/
+        {
+            var rd = new Random();
+            double value = rd.Next(min, max);
+            double point = rd.NextDouble();
+            if (value + point > max)
+            {
+                value = max;
+            }
+            else
+            {
+                value += point;
+            }
+
+            return value;
+        }
+
         public static double double_max(double[] array) /*tim gia tri lon nhat cua array*/
         {
             double max = 0;
@@ -25,9 +48,9 @@ namespace Bai_tap_mang_v2
                     Console.Write("[ ");
                 else
                 {
-                    string strElement = array[i].ToString("F");
-                    Console.Write($"{strElement} ");
+                    Console.Write($"{array[i]:F} ");
                 }
+
                 if (i == array.Length - 1) Console.WriteLine(" ]");
             }
         }
@@ -45,7 +68,7 @@ namespace Bai_tap_mang_v2
             }
         }
 
-        public static void index_minvalue(int[] array,out int index,out int minValue)
+        public static void index_minvalue(int[] array, out int index, out int minValue)
         {
             minValue = 0;
             index = 0;
@@ -59,6 +82,22 @@ namespace Bai_tap_mang_v2
                 {
                     minValue = array[i];
                     index = i;
+                }
+            }
+        }
+
+        public static void print_intMatrix(int[,] matrix) /*in cac gia tri trong matran*/
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    if (j == 0 && i != 0)
+                    {
+                        Console.WriteLine("");
+                    }
+
+                    Console.Write($"{matrix[i, j]} ");
                 }
             }
         }

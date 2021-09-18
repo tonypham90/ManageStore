@@ -17,6 +17,9 @@ namespace Bai_tap_mang_v2
                 case "123":
                     practice_source.bai123();
                     break;
+                case "1":
+                    practice_source.baitestmatran();
+                    break;
             }
         }
     }
