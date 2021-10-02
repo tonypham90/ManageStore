@@ -17,8 +17,14 @@ namespace Bai_tap_mang_v2
                 case "123":
                     practice_source.bai123();
                     break;
-                case "1":
-                    practice_source.baitestmatran();
+                case "311":
+                    practice_source.bai311();
+                    break;
+                case "313":
+                    practice_source.bai312();
+                    break;
+                case "315":
+                    practice_source.bai315();
                     break;
             }
         }

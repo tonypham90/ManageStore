@@ -204,3 +204,189 @@ Bài 307: Tạo mảng b chỉ chứa giá trị lẻ từ mảng a
 Bài 308: Tạo mảng b chỉ chứa giá trị âm từ mảng a
 Bài 309: Tạo mảng b sao cho b[i] = tổng các phần tử lân cận với a[i] trong mảng a
 Bài 310: Tạo mảng b chỉ chứa số nguyên tố từ mảng a
+
+Chương 6: Ma trận
+Bài 311 + 313: Viết hàm nhập xuất ma trận số nguyên
+Bài 312 + 314: Viết hàm nhập xuất ma trận số thực
+Bài 315: Viết hàm tìm giá trị lớn nhất trong ma trận số thực
+Bài 316: Viết hàm kiểm tra trong ma trận số nguyên có tồn tại giá trị chẵn nhỏ hơn 2015?
+Bài 317: Viết hàm đếm số lượng số nguyên tố trong ma trận số nguyên
+Bài 318: Viết hàm tính tổng các giá trị âm trong ma trận số thực
+Bài 319: Viết hàm sắp xếp ma trận các số thực tăng dần từ trên xuống dưới và từ trái sang phải
+Kỹ thuật tính toán
+Bài 320: Tính tổng các số dương trong ma trận các số thực
+Bài 321: Tính tích các giá trị lẻ trong ma trận các số nguyên
+Bài 322: Tính tổng các giá trị trên 1 dòng trong ma trận các số thực
+Bài 323: Tính tích các giá trị dương trên 1 cột trong ma trận các số thực
+Bài 324: Tính tổng các giá trị dương trên 1 dòng trong ma trận các số thực
+Bài 325: Tính tích các số chẵn trên 1 cột trong ma trận các số nguyên
+Bài 326: Tính trung bình cộng các số dương trong ma trận các số thực
+Bài 327: Tính tổng các giá trị nằm trên biên của ma trận
+Bài 328: Tính trung bình nhân các số dương trong ma trận các số thực
+Bài 329: Hãy biến đổi ma trận bằng cách thay các giá trị âm bằng trị tuyệt đối của nó
+Bài 330: Hãy biên đổi ma trận số thực bằng cách thay các giá trị bằng giá trị nguyên gần nó nhất
+Bài 331: Tính tổng các giá trị trên 1 dòng của ma trận các số thực
+Bài 332: Tính tổng các giá trị lẻ trên 1 cột của ma trận các số nguyên
+Bài 333: Tính tổng các số hoàn thiện trong ma trận các số nguyên
+Kỹ thuật đếm
+Bài 334: Viết hàm đếm số lượng số dương trong ma trận các số thực
+Bài 335: Đếm số lượng số nguyên tố trong ma trận các số nguyên
+Bài 336: Đếm tần suất xuất hiện của 1 giá trị x trong ma trận các số thực
+Bài 337: Đếm số chữ số trong ma trận các số nguyên dương
+Bài 338: Đếm số lượng số dương trên 1 hàng trong ma trận các số thực
+Bài 339: Đếm số lượng số hoàn thiện trên 1 hàng trong ma trận các số nguyên
+Bài 340: Đếm số lượng số âm trên 1 cột trong ma trận các số thực
+Bài 341: Đếm số lượng số dương trên biên trong ma trận các số thực
+Bài 342(*): Đếm số lượng phần tử cực đại trong ma trận các số thực. Một phần tử được gọi là cực đại khi nó lớn hơn các phần tử xung quanh
+Bài 343(*): Đếm số lượng phần tử cực trị trong ma trận các số thực. Một phần tử được gọi là cực trị khi nó lớn hớn các phần tử xung quanh hoặc nhỏ hơn các phần tử xung quanh
+Bài 344(*): Đếm số lượng giá trị có trong ma trận các số thực. Chú ý: Nếu có k phần tử (k >= 1) trong ma trận bằng nhau thì ta chỉ tính là 1
+Bài 345(*): Tính tổng các phần tử cực trị trong ma trận các số thực. Một phần tử được gọi là cực trị khi nó lớn hớn các phần tử xung quanh hoặc nhỏ hơn các phần tử xung quanh
+Bài 346(*): Đếm số lượng giá trị “Hoàng Hậu” trên ma trận. Một phần tử được gọi là Hoàng Hậu khi nó lớn nhất trên dòng, trên cột và 2 đường chéo đi qua nó
+Bài 347(*): Đếm số lượng giá trị “Yên Ngựa” trên ma trận. Một phần tử được gọi là Yên Ngựa khi nó lớn nhất trên dòng và nhỏ nhất trên cột
+Kỹ thuật đặt cờ hiệu
+Bài 348: Kiểm tra ma trận có tồn tại số dương hay không
+Bài 349: Kiểm tra ma trận có tồn tại số hoàn thiện hay không
+Bài 350: Kiểm tra ma trận có tồn tại số lẻ hay không
+Bài 351: Kiểm tra ma trận có toàn dương hay không
+Bài 352: Kiểm tra một hàng ma trận có tăng dần hay không
+Bài 353: Kiểm tra một cột ma trận có giảm dần hay không
+Bài 354: Kiểm tra các giá trị trong ma trận có giảm dần theo dòng và cột hay không
+Bài 355: Liệt kê các dòng toàn âm trong ma trận các số thực
+Bài 356: Liệt kê chỉ số các dòng chứa toàn giá trị chẵn trong ma trận các số nguyên
+Bài 357: Liệt kê các dòng có chứa số nguyên tố trong ma trận các số nguyên
+Bài 358: Liệt kê các dòng có chứa giá trị chẵn trong ma trận các số nguyên
+Bài 359: Liệt kê các dòng có chứa giá trị âm trong ma trận các số thực
+Bài 360: Liệt kê các cột trong ma trận các số nguyên có chứa số chính phương
+Bài 361: Liệt kê các dòng trong ma trận các số thực thỏa mãn đồng thời các điều kiện sau:  dòng có chứa giá trị âm, giá trị 0 và giá trị dương
+Bài 362: Liệt kê các dòng giảm dần trong ma trận
+Bài 363: Liệt kê các cột tăng dần trong ma trận
+Bài 364: Cho 2 ma trận A và B. Kiểm tra xem ma trận A có là ma trận con của ma trận B hay không
+Bài 365: Cho 2 ma trận A và B. Đếm số lần xuất hiện của ma trận A trong ma trận B
+Kỹ thuật đặt lính canh
+Bài 366: Tìm số chẵn đầu tiên trong ma trận
+Bài 367: Tìm max trong ma trận
+Bài 368: Tìm giá trị lớn thứ 2 trong ma trận
+Bài 369: Tìm số dương đầu tiên trong ma trận
+Bài 370: Tìm giá trị âm lớn nhất trong ma trận
+Bài 371: Liệt kê các dòng có chứa max
+Bài 372: Tìm giá trị lớn nhất trên 1 dòng
+Bài 373: Tìm giá trị nhỏ nhất trên 1 cột
+Bài 374: Tìm số nguyên tố đầu tiên
+Bài 375: Tìm số chẵn lớn nhất
+Bài 376: Tìm số dương nhỏ nhất
+Bài 377: Tìm số nguyên tố lớn nhất
+Bài 378: Tìm 1 chữ số xuất hiện nhiều nhất
+Bài 379: Đếm số lượng min
+Bài 380: Đếm số lượng chẵn nhỏ nhất
+Bài 381: Tìm giá trị xuất hiện nhiều nhất
+Bài 382: Tìm số chính phương lớn nhất
+Bài 383: Tìm số hoàn thiện nhỏ nhất
+Bài 384: Tìm các chữ số xuất hiện nhiều nhất trong ma trận
+Bài 385: Liệt kê các dòng có tổng lớn nhất
+Bài 386: Liệt kê các cột có tổng nhỏ nhất
+Bài 387: Liệt kê các dòng có nhiều số chẵn nhất
+Bài 388: Liệt kê các dòng có nhiều số nguyên tố nhất
+Bài 389: Liệt kê các dòng có nhiều số hoàn thiện nhất
+Bài 390(*): Liệt kê các cột nhiều chữ số nhất trong ma trận các số nguyên
+Bài 391(*): Tìm ma trận con có tổng lớn nhất
+Kỹ thuật xử lý ma trận
+Bài 392: Hoán vị 2 dòng trên ma trận
+Bài 393: Hoán vị 2 cột trên ma trận
+Bài 394: Dịch xuống xoay vòng các hàng trong ma trận
+Bài 395: Dịch lên xoay vòng các hàng trong ma trận
+Bài 396: Dịch trái xoay vòng các cột trong ma trận
+Bài 397: Dịch phải xoay vòng các cột trong ma trận
+Bài 398: Dịch phải xoay vòng theo chiều kim đồng hồ các giá trị nằm trên biên ma trận
+Bài 399: Dịch trái xoay vòng theo chiều kim đồng hồ các giá trị nằm trên biên ma trận
+Bài 400: Xóa 1 dòng trong ma trận
+Bài 401: Xóa 1 cột trong ma trận
+Bài 402: Xoay ma trận 1 góc 90 độ
+Bài 403: Xoay ma trận 1 góc 180 độ
+Bài 404: Xoay ma trận 1 góc 270 độ
+Bài 405: Chiếu gương ma trận theo trục dọc
+Bài 406: Chiếu gương ma trận theo trục ngang
+Sắp xếp ma trận
+Bài 407: Viết hàm sắp xếp các phần tử trên 1 dòng tăng dần từ trái sang phải
+Bài 408: Viết hàm sắp xếp các phần tử trên 1 dòng giảm dần từ trái sang phải
+Bài 409: Viết hàm sắp xếp các phần tử trên 1 cột tăng dần từ trên xuống dưới
+Bài 410: Viết hàm sắp xếp các phần tử trên 1 cột giảm dần từ trên xuống dưới
+Bài 411: Viết hàm xuất các giá trị chẵn trong ma trận các số nguyên theo thứ tự giảm dần
+Bài 412: Viết hàm xuất các số nguyên tố trong ma trận các số nguyên theo thứ tự tăng dần
+Bài 413: Viết hàm sắp xếp các phần tử trong ma trận theo yêu cầu sau:
+Dòng có chỉ số chẵn tăng dần
+Dòng có chỉ số lẻ giảm dần
+Bài 414: Viết hàm sắp xếp các phần tử trong ma trận theo yêu cầu sau:
+Cột có chỉ số chẵn giảm dần từ trên xuống
+Cột có chỉ số lẻ tăng dần từ trên xuống
+Bài 415 Sắp xếp ptử tăng dần theo hàng và cột: Dùng 2 phương pháp: sử dụng mảng phụ và ko dùng mảng phụ
+Bài 416: Sắp xếp ptử dương tăng dần theo cột và dòng. Dùng 2 phương pháp: Sử dụng mảng phụ và ko sử dụng mảng phụ
+Bài 417: Sắp xếp ptử chẵn giảm dần theo cột và dòng. Dùng 2 phương pháp: Sử dụng mảng phụ và ko sử dụng mảng phụ
+Bài 418: Sắp xếp âm tăng dần, dương giảm dần, 0 giữ nguyên
+Bài 419: Sắp xếp chẵn tăng, lẻ giảm
+Bài 420: Sắp xếp các giá trị nằm trên biên ma trận tăng dần
+Bài 421: Sắp xếp các giá trị dương nằm trên biên ma trận tăng dần
+Bài 422: Sắp xếp các dòng dựa vào: tổng các ptử trong 1 dòng: sắp tăng dần.
+Bài 423: Sắp xếp giá trị các ptử trong ma trận tăng dần theo dạng xoắn ốc (ma trận xoắn ốc)
+Bài 424: Sắp xếp giá trị các ptử trong ma trận tăng dần theo dạng ziczac
+Bài 425: Xuất các giá trị âm  giảm dần(ma trận không thay đổi sau khi xuất)
+Xây dựng ma trận
+Bài 426: Cho ma trận A. Hãy tạo ma trận B, B[i][j] = abs(A[i][j])
+Bài 427: Cho ma trận A. Hãy tạo ma trận B, B[i][j] = lớn nhất dòng i, cột j của A
+Bài 428: Cho ma trận A. Hãy tạo ma trận B, B[i][j] = số lượng ptử dương xung quanh A[i][j]
+Chương 7: Ma trận vuông
+Bài 429 + Bài 431: Viết hàm nhập, xuất ma trận vuông các số nguyên
+Hàm duyệt các phần tử trên đường chéo chính
+Hàm duyệt các phần tử thuộc tam giác trên đường chéo chính
+Hàm duyệt các phần tử thuộc tam giác dưới đường chéo chính
+Hàm duyệt các phần tử trên đường chéo phụ
+Hàm duyệt các phần tử thuộc tam giác trên đường chéo phụ
+Hàm duyệt các phần tử thuộc tam giác dưới đường chéo phụ
+Bài 430 + Bài 432: Viết hàm nhập, xuất ma trận vuông các số thực
+Bài 433: Viết hàm tìm giá trị lớn nhất trong ma trận vuông các số thực
+Bài 434: Viết hàm kiểm tra trong ma trận vuông các số nguyên có tồn tại giá trị chẵn nhỏ hơn 2015 hay không
+Bài 435: Viết hàm đếm số lượng số nguyên tố trong ma trận vuông các số nguyên
+Bài 436: Viết hàm tính tổng các giá trị âm trong ma trận vuông các số thực
+Bài 437: Viết hàm sắp xếp ma trận vuông các số thực tăng dần từ trên xuống dưới và từ trái sang phải
+Tính toán
+Bài 438: Tổng phần tử thuộc ma trận tam giác trên (ko tính đường chéo) trong ma trận vuông
+Bài 439: Tổng phần tử thuộc ma trận tam giác dưới (ko tính đường chéo) trong ma trận vuông
+Bài 440: Tổng phần tử trên đường chéo chính
+Bài 441: Tổng phần tử trên đường chéo phụ
+Bài 442: Tổng phần tử chẵn nằm trên biên
+Kỹ thuật đặt lính canh
+Bài 443: Tìm max trong ma trận tam giác trên
+Bài 444: Tìm min trong ma trận tam giác dưới
+Bài 445: Tìm max trên đường chéo chính
+Bài 446: Tìm max trên đường chéo phụ
+Bài 447: Tìm max nguyên tố trong ma trận
+Bài 448: Tìm 2 giá trị gần nhau nhất
+Bài 449: * Cho ma trận vuông A(n x n). Hãy tìm ma trận vuông B(k x k) sao cho tổng các giá trị trên ma trận vuông này là lớn nhất
+Kỹ thuật đếm
+Bài 450: Đếm số lượng cặp giá trị đối xứng nhau wa đường chéo chính
+Bài 451: Đếm số lượng dòng giảm
+Bài 452: Đếm phần tử cực đại
+Bài 453: Đếm giá trị dương trên đường chéo chính
+Bài 454: Đếm số âm trên đường chéo phụ
+Bài 455: Đếm số chẵn trong ma trận tam giác trên
+Kỹ thuật đặt cờ hiệu
+Bài 456: Kiểm tra đường chéo chính có tăng dần hay ko
+Bài 457: Kiểm tra ma trận có đối xứng wa chéo chính ko
+Bài 458: Kiểm tra ma trận có đối xứng wa chéo phụ ko
+Bài 459: Kiểm tra ma trận có phải là ma phương ko? Ma phương là khi tổng ptử trên các dòng, cột và 2 chéo chính phụ bằng nhau
+Sắp xếp
+Bài 460: Sắp chéo chính tăng dần
+Bài 461: Sắp chéo phụ giảm dần
+Bài 462: Hoán vị 2 dòng
+Bài 463: Hoán vị 2 cột
+Bài 464: sắp các dòng tăng dần theo tổng dòng
+Bài 465: Đưa chẵn về đầu ma trận vuông
+Bài 466: * Ma trận vuông A(n x n) với n >=3. Sắp tam giác trên tăng dần từ trên xuống dưới và từ trái sang phải
+Bài 467: * Ma trận vuông A với n>=3. Sắp tam giác dưới giảm dần từ trên xuống dưới và từ trái sang phải
+Bài 468: * Xây dựng ma phương A
+Các phép toán trên ma trận
+Bài 469: Tổng 2 ma trận
+Bài 470: Hiệu 2 ma trận
+Bài 471: Tích 2 ma trận
+Bài 472: * Ma trận nghịch đảo
+Bài 473: * Định thức của ma trận
+Bài 474: * Tạo ma phương bậc n x n

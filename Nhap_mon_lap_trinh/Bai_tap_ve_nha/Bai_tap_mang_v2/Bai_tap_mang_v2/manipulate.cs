@@ -1,4 +1,5 @@
 using System;
+using System.Linq.Expressions;
 
 namespace Bai_tap_mang_v2
 {
@@ -101,5 +102,57 @@ namespace Bai_tap_mang_v2
                 }
             }
         }
+
+        public static void print_doubleMatrix(double[,] matrix)
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    if (j == 0 && i != 0)
+                    {
+                        Console.WriteLine("");
+                    }
+
+                    Console.Write($"{matrix[i, j]:F} ");
+                }
+            }
+        }
+        
+        public static bool checkRand()
+        {
+            Console.WriteLine("mang tu dong hay nhap tay? (Y/N): ");
+            bool rand = true;
+            string check = Console.ReadLine()!.ToLower();
+            if (check != "y")
+            {
+                rand = false;
+            }
+            return rand;
+        }
+
+        public static void indexMatrix(int target,int jumprow,int jumpcolume, int[,] matrix, out int row, out int column)
+        {
+            row = jumprow;
+            column = jumpcolume;
+            for (int i = jumprow; i < matrix.GetLength(0); i++)
+            {
+                for (int j = jumprow; j < matrix.GetLength(1); j++)
+                {
+                    if (target == matrix[i,j])
+                    {
+                        row = i;
+                        column = j;
+                    }
+                }
+            }
+        }
+
+        public static bool checkSize(int[,] MatrixA, int lamdarow, int lamdacolumn)
+        {
+            bool size=!(lamdarow>=MatrixA.GetLength(0)||lamdacolumn>=MatrixA.GetLength(1));
+            return size;
+        }
+        
     }
 }
