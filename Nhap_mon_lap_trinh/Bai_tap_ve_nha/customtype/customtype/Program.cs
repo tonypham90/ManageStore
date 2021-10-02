@@ -19,7 +19,7 @@ namespace customtype
             b = dothi.nhapToaDo("Nhap Toa do diem B: ");
             c = dothi.nhapToaDo("Nhap Toa do diem C: ");
             float chuvi;
-            chuvi = dothi.SPACING(a, b) + dothi.SPACING(b, c) + dothi.SPACING(a, c);
+            chuvi = dothi.ChuVi(a,b,c);
             Console.WriteLine($"chuvi tam giac A B C la: {chuvi:F}");
 
         }

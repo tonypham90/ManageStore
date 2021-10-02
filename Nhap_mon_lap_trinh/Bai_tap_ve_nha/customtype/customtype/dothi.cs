@@ -29,5 +29,12 @@ namespace customtype
             /*Console.WriteLine($"Khoan cach la: {kq:F} ");*/
             return kq;
         }
+
+        public static float ChuVi(TOADO a, TOADO b, TOADO c)
+        {
+            float chuvi;
+            chuvi = dothi.SPACING(a, b) + dothi.SPACING(b, c) + dothi.SPACING(a, c);
+            return chuvi;
+        }
     }
 }
