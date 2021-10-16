@@ -7,6 +7,11 @@ namespace customtype
         public int tuso;
         public int mauso;
     }
+
+    public struct LISTPHANSO
+    {
+        public PHANSO[] ListPhansos;
+    }
     public class xulyphanso
     {
         public static PHANSO inputPhanSo(string ghichu)
@@ -29,6 +34,11 @@ namespace customtype
             kq.tuso = a.tuso * b.mauso + a.mauso + b.tuso;
             kq.mauso = a.mauso * b.mauso;
             return kq;
+        }
+
+        public static LISTPHANSO[] NhapMangPhanSo(string Ghichu)
+        {
+            
         }
     }
 }

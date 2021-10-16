@@ -1,0 +1,2 @@
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/test/test/obj/Debug/test.csproj.AssemblyReference.cache
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/test/test/obj/Debug/test.csproj.CoreCompileInputs.cache

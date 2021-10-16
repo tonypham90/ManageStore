@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Sockets;
 
 namespace customtype
 {
@@ -13,15 +14,12 @@ namespace customtype
             PHANSO kq;
             kq = xulyphanso.Cong2PhanSo(a, b);
             xulyphanso.xuatPhanSo(kq);*/
-
-            TOADO a, b, c;
-            a = dothi.nhapToaDo("Nhap Toa do diem A: ");
-            b = dothi.nhapToaDo("Nhap Toa do diem B: ");
-            c = dothi.nhapToaDo("Nhap Toa do diem C: ");
+            
+            DAGIAC d;
             float chuvi;
-            chuvi = dothi.ChuVi(a,b,c);
-            Console.WriteLine($"chuvi tam giac A B C la: {chuvi:F}");
-
+            d = xulydagiac.NhapDaGiac("Nhap Da Giac: ");
+            chuvi = xulydagiac.TinhChuVi(d);
+            Console.WriteLine($"Chu vi cua da giac la {chuvi}");
         }
     }
 }
