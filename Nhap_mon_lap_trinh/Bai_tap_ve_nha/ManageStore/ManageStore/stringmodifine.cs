@@ -1,4 +1,6 @@
 using System;
+using System.Threading;
+using Microsoft.VisualBasic;
 
 namespace ManageStore
 {
@@ -9,6 +11,8 @@ namespace ManageStore
     }
     public class Stringmodifine
     {
+        /*Width of column*/
+        private const int limitmsp = 11,limitth=30,limitsl=10,limithd=11,limitsx=12,limitlh=10,limitcty=20;
         public static Date Inputdate()
         {
             int month = 0, year = 0;
@@ -79,22 +83,39 @@ namespace ManageStore
             }
 
             return texta;
-        }/*Chuan hoa string*/
-
+        }
+        
+        //Printout format table
+        // Header Table format
+        
         public static void HeaderTable()
         {
-            string msp,tenhang,hd,nsx,ctxs,loaihang,sl;
-            msp = FixText("Ma SP",10);
-            tenhang = FixText("Ten Hang",30);
-            sl = FixText("Số lượng", 10);
-            hd = FixText("Han SD",10);
-            nsx = FixText("Nam SX",10);
-            ctxs = FixText("cty SX",20);
-            loaihang = FixText("Loai Hang",10);
-            Console.WriteLine($"|{msp}|{tenhang}|{hd}|{nsx}|{ctxs}|{loaihang}|");
+            string msp,th,hd,nsx,ctxs,lh,sl;
+            msp = FixText("Mã Sản Phẩm",limitmsp);
+            th = FixText("Tên Hàng",limitth);
+            sl = FixText("Số lượng", limitsl);
+            hd = FixText("HSD (mm/yy)",limithd);
+            nsx = FixText("NSX (mm/yy)",limitsx);
+            ctxs = FixText("Cty sản xuất",limitcty);
+            lh = FixText("Loại hàng",limitlh);
+            string text = ($"| {msp} | {th} | {sl} | {hd} | {nsx} | {ctxs} | {lh} |");
+            Console.WriteLine(text);
         }
 
-        public static string PrintDate(Date a)/*in dinh dang ngay thang cho du lieu struct Date*/
+        public static void printItem(Item a)
+        {
+            string msp,th,hd,nsx,ctxs,lh,sl,text;
+            msp = FixText(a.Id,limitmsp);
+            th = FixText(a.Name,limitth);
+            sl = FixText(a.Qty.ToString(), limitsl);
+            hd = FixText(DateString(a.Exp),limithd);
+            nsx = FixText(DateString(a.Mfg),limitsx);
+            ctxs = FixText(a.Com,limitcty);
+            lh = FixText(a.Type,limitlh);
+            Console.WriteLine($"| {msp} | {th} | {sl} | {hd} | {nsx} | {ctxs} | {lh} |");
+        }
+
+        public static string DateString(Date a)/*in dinh dang ngay thang cho du lieu struct Date*/
         {
             string textdate = String.Concat(String.Format(a.Month),"/",a.Year);
             return textdate;

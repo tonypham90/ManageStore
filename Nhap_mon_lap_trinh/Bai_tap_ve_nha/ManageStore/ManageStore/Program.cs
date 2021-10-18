@@ -10,9 +10,6 @@ namespace ManageStore
         {
             Item a;
             Stringmodifine.HeaderTable();
-            a = Itemmodifine.InputiItemtem("Nhap item");
-            Stringmodifine.PrintDate(a.Exp);
-            Console.Write(Stringmodifine.PrintDate(a.Exp));
         }
     }
 }

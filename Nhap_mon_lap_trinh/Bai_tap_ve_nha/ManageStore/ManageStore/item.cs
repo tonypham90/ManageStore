@@ -20,9 +20,9 @@ namespace ManageStore
             Console.WriteLine(Ghichu);
             Item item = new Item();
             Console.Write("Mã Sản Phẩm: ");
-            item.Id = Console.ReadLine()!;
+            item.Id = Console.ReadLine()!.ToUpper();
             Console.Write("Tên sản phẩm: ");
-            item.Name = Console.ReadLine()!;
+            item.Name = Console.ReadLine()!.ToUpper();
             Console.Write("Tên sản phẩm: ");
             item.Qty = int.Parse(Console.ReadLine()!);
             Console.Write("Hạn Dùng: ");
@@ -38,5 +38,6 @@ namespace ManageStore
     public struct store
     {
         public Item[] Itemslist;
+        public string[] ID;
     }
 }
