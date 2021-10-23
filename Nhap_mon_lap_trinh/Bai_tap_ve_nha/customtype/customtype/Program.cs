@@ -1,10 +1,11 @@
 ﻿using System;
-using System.Net.Sockets;
+
 
 namespace customtype
 {
     class Program
     {
+        // ReSharper disable once UnusedParameter.Local
         static void Main(string[] args)
         {
             /*PHANSO a,b;
