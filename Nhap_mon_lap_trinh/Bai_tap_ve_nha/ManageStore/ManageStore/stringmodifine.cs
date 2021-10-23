@@ -1,123 +1,123 @@
 using System;
-using System.Threading;
-using Microsoft.VisualBasic;
 
 namespace ManageStore
 {
-    public struct Date
-    {
-        public string Month;
-        public string Year;
-    }
     public class Stringmodifine
     {
         /*Width of column*/
-        private const int limitmsp = 11,limitth=30,limitsl=10,limithd=11,limitsx=12,limitlh=10,limitcty=20;
-        public static Date Inputdate()
+        private const int Limitmsp = 11,
+            Limitth = 30,
+            Limitsl = 8,
+            Limithd = 10,
+            Limitsx = 11,
+            Limitlh = 11,
+            Limitcty = 20;
+
+        public static Date InputDate()
         {
             int month = 0, year = 0;
             Date date;
-            bool checkmonth = false, checkyear = false;
+            bool checkMonth = false, checkYear = false;
             // ReSharper disable once ConditionIsAlwaysTrueOrFalse
             // ReSharper disable once LoopVariableIsNeverChangedInsideLoop
-            while (checkmonth == false)
-            { 
+            while (checkMonth == false)
+            {
                 Console.WriteLine("Month(1~12): ");
                 month = int.Parse(Console.ReadLine()!);
                 /*Check value input*/
-                if (month < 13 && month>0)
-                {
-                    checkmonth = true;
-                }
+                if (month is < 13 and > 0)
+                    checkMonth = true;
                 else
-                {
                     Console.WriteLine("Your input may be higher 12 or lower 0, please input againt");
-                }
             }
+
             // ReSharper disable once ConditionIsAlwaysTrueOrFalse
             // ReSharper disable once LoopVariableIsNeverChangedInsideLoop
-            while (checkyear == false)
-            { 
+            while (checkYear == false)
+            {
                 Console.WriteLine("Year (yyyy or yy): ");
                 year = int.Parse(Console.ReadLine()!);
-                if (year>0 && (year<100 || year > 1900))
+                if (year > 0 && (year < 100 || year > 1900))
                 {
-                    if (year>1000)
-                    {
-                        year = year % 100;
-                    }
-                    checkyear = true;
+                    if (year > 1000) year = year % 100;
+                    checkYear = true;
                 }
                 else
                 {
                     Console.WriteLine("Your input may be higher 12 or lower 0, please input againt");
                 }
             }
-            date.Month = $"{month}";
-            date.Year = String.Format("{0}",year);
+
+            date.Month = month;
+            date.Year = year;
             return date;
         }
-        public static string FixText(string field,int limitchar)
+
+        public static string FixText(string field, int limitChar)
         {
             // Gioi han so luong ky tu in;
             string texta = null;
-            int limit = Math.Min(field.Length, limitchar);
-            if (limit < limitchar)
+            var limit = Math.Min(field.Length, limitChar);
+            if (limit < limitChar)
             {
-                for (int i = 0; i < field.Length; i++)
-                {
-                    texta += field[i].ToString();
-                }
+                for (var i = 0; i < field.Length; i++) texta += field[i].ToString();
 
-                while (texta.Length<limitchar)
-                {
-                    texta += " ";
-                } 
+                // ReSharper disable once PossibleNullReferenceException
+                while (texta.Length < limitChar) texta += " ";
             }
             else
             {
-                for (int i = 0; i < limitchar; i++)
-                {
-                    texta += field[i].ToString();
-                }
+                for (var i = 0; i < limitChar; i++) texta += field[i].ToString();
             }
 
             return texta;
         }
-        
+
         //Printout format table
         // Header Table format
-        
+        public static void EndSeparate()
+        {
+            string dast = null;
+            var countdask = Limitcty + Limithd + Limitlh + Limitmsp + Limitsl + Limitsx + Limitth + 3 * 8;
+            for (var i = 0; i < countdask; i++) dast += "-";
+            Console.WriteLine(dast);
+        }
+
         public static void HeaderTable()
         {
-            string msp,th,hd,nsx,ctxs,lh,sl;
-            msp = FixText("Mã Sản Phẩm",limitmsp);
-            th = FixText("Tên Hàng",limitth);
-            sl = FixText("Số lượng", limitsl);
-            hd = FixText("HSD (mm/yy)",limithd);
-            nsx = FixText("NSX (mm/yy)",limitsx);
-            ctxs = FixText("Cty sản xuất",limitcty);
-            lh = FixText("Loại hàng",limitlh);
-            string text = ($"| {msp} | {th} | {sl} | {hd} | {nsx} | {ctxs} | {lh} |");
+            EndSeparate();
+            string id, name, exp, mfg, com, type, qty;
+            id = FixText("Mã Sản Phẩm", Limitmsp);
+            name = FixText("Tên Hàng", Limitth);
+            qty = FixText("Số lượng", Limitsl);
+            exp = FixText("HSD (mm/yy)", Limithd);
+            mfg = FixText("NSX (mm/yy)", Limitsx);
+            com = FixText("Cty sản xuất", Limitcty);
+            type = FixText("Loại hàng", Limitlh);
+            var text = $"| {id} | {name} | {qty} | {exp} | {mfg} | {com} | {type} |";
+
             Console.WriteLine(text);
+            EndSeparate();
         }
 
-        public static void printItem(Item a)
+        //in gia tri cua lo hang
+        public static void PrintItem(Item a)
         {
-            string msp,th,hd,nsx,ctxs,lh,sl,text;
-            msp = FixText(a.Id,limitmsp);
-            th = FixText(a.Name,limitth);
-            sl = FixText(a.Qty.ToString(), limitsl);
-            hd = FixText(DateString(a.Exp),limithd);
-            nsx = FixText(DateString(a.Mfg),limitsx);
-            ctxs = FixText(a.Com,limitcty);
-            lh = FixText(a.Type,limitlh);
-            Console.WriteLine($"| {msp} | {th} | {sl} | {hd} | {nsx} | {ctxs} | {lh} |");
+            string id, name, exp, mfg, com, type, qty;
+            id = FixText(a.Id, Limitmsp);
+            name = FixText(a.Name, Limitth);
+            qty = FixText(a.Qty.ToString(), Limitsl);
+            exp = FixText(DateString(a.Exp), Limithd);
+            mfg = FixText(DateString(a.Mfg), Limitsx);
+            com = FixText(a.Com, Limitcty);
+            type = FixText(a.Type, Limitlh);
+            Console.WriteLine($"| {id} | {name} | {qty} | {exp} | {mfg} | {com} | {type} |");
         }
 
-        public static string DateString(Date a)/*in dinh dang ngay thang cho du lieu struct Date*/
+        //in dinh dang ngay thang
+        public static string DateString(Date a) /*in dinh dang ngay thang cho du lieu struct Date*/
         {
-            string textdate = String.Concat(String.Format(a.Month),"/",a.Year);
+            var textdate = $"{a.Month:00}/{a.Year:00}";
             return textdate;
         }
     }
