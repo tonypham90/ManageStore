@@ -73,6 +73,7 @@ namespace ManageStore
         public static string SelectLabel(string note, Store data)
         {
             Console.WriteLine(note);
+            int userchoise = 0;
             string[] listlabel = data.Label;
             Console.WriteLine("Loại hàng:");
             for (int i = 0; i < listlabel.Length; i++)
@@ -81,7 +82,7 @@ namespace ManageStore
                 Console.WriteLine(text);
             }
             Console.WriteLine($"lựa chọn lo số (1~{listlabel.Length})");
-            int userchoise = int.Parse(Console.ReadLine()!);
+            userchoise = int.Parse(Console.ReadLine()!);
             while (userchoise>listlabel.Length)
             {
                 Console.WriteLine($"Vui lòng chọn loại hàng số (1~{listlabel.Length})");
