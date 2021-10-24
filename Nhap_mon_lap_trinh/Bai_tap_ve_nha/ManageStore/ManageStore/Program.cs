@@ -11,19 +11,15 @@ namespace ManageStore
         {
             Console.OutputEncoding = Encoding.UTF8;
             Console.InputEncoding = Encoding.UTF8;
+            Console.WriteLine();
             var warehouse = new Store();
-            warehouse.ItemsList = new List<Item>();
+            warehouse.ItemsList = new Item[];
             for (var i = 0; i < 10; i++)
             {
                 var text = $"Nhap du lieu thu {i}";
                 warehouse.ItemsList.Add(Function.InputItem(text, warehouse, true));
             }
-
-            Function.PrintTable(warehouse);
-
-            warehouse.ItemsList.Add(item: Function.InputItem("moi", warehouse, true));
-
-            Function.PrintTable(warehouse);
+            
         }
     }
 }
