@@ -78,8 +78,8 @@ namespace ManageStore
         public static void EndSeparate()
         {
             string dast = null;
-            var countdask = Limitcty + Limithd + Limitlh + Limitmsp + Limitsl + Limitsx + Limitth + 3 * 8;
-            for (var i = 0; i < countdask; i++) dast += "-";
+            var countdast = Limitcty + Limithd + Limitlh + Limitmsp + Limitsl + Limitsx + Limitth + 3 * 8;
+            for (var i = 0; i < countdast; i++) dast += "-";
             Console.WriteLine(dast);
         }
 

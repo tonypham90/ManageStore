@@ -18,18 +18,18 @@ namespace ManageStore
 
         private protected static string[] Brand = { "Daklak", "Intel", "Sony", "X-Space", "Takana", "Viet-Gab" };
 
-        private protected static string[] Type = { "THUCPHAM", "DIENTU", "GIADUNG" };
+        public static string[] Type = { "THUCPHAM", "DIENTU", "GIADUNG" };
 
 
         public static string RanId(Item[] items)
         {
             string newid = null;
-            var duplicateCheck = true;
-            var count = 2;
+            bool duplicateCheck = true;
+            int count = 2;
             while (duplicateCheck)
             {
                 newid = new string(Enumerable.Repeat(Chars, 4).Select(s => s[ran.Next(s.Length)]).ToArray());
-                duplicateCheck = Function.Duplicate(newid, items);
+                duplicateCheck = Function.Duplicatecheckid(newid, items);
             }
 
             return newid;
@@ -37,8 +37,8 @@ namespace ManageStore
 
         public static string RandItemDetail(string[] detail)
         {
-            var id = ran.Next(0, detail.Length);
-            var detailValue = detail[id].ToUpper();
+            int id = ran.Next(0, detail.Length);
+            string detailValue = detail[id].ToUpper();
             Console.WriteLine(detailValue);
             return detailValue;
         }
