@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace ManageStore
@@ -13,7 +12,7 @@ namespace ManageStore
             Console.InputEncoding = Encoding.UTF8;
             Console.WriteLine();
             Store warehouse = new Store();
-            Function.createfistdata(ref warehouse);
+            Function.CreateFirstData(ref warehouse);
             Function.PrintTable(warehouse);
             
         }

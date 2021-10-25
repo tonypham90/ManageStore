@@ -53,17 +53,17 @@ namespace ManageStore
             {
                 Console.Write("Mã Sản Phẩm: ");
                 item.Id = Sample.RanId(warehouse.ItemsList);
-                Console.Write("Loại sản phẩm: ");
+                Console.Write("Loại: ");
                 item.Type = SelectLabel("Loại sản phẩm: ",warehouse);
-                Console.Write("Tên sản phẩm: ");
+                Console.Write("Tên: ");
                 item.Name = Console.ReadLine()!.ToUpper();
-                Console.Write("Tên sản phẩm: ");
+                Console.Write("Số lượng: ");
                 item.Qty = int.Parse(Console.ReadLine()!);
                 Console.Write("Hạn Dùng: ");
                 item.Exp = Stringmodifine.InputDate();
                 Console.Write("Ngày sản xuất: ");
                 item.Mfg = Stringmodifine.InputDate();
-                Console.Write("Công ty sản xuất");
+                Console.Write("Công ty");
                 item.Com = Console.ReadLine()!;
             }
 
@@ -73,7 +73,6 @@ namespace ManageStore
         public static string SelectLabel(string note, Store data)
         {
             Console.WriteLine(note);
-            int userchoise = 0;
             string[] listlabel = data.Label;
             Console.WriteLine("Loại hàng:");
             for (int i = 0; i < listlabel.Length; i++)
@@ -81,9 +80,11 @@ namespace ManageStore
                 string text = $"{i + 1}. {listlabel[i]}";
                 Console.WriteLine(text);
             }
-            Console.WriteLine($"lựa chọn lo số (1~{listlabel.Length})");
-            userchoise = int.Parse(Console.ReadLine()!);
-            while (userchoise>listlabel.Length)
+            Console.WriteLine("lựa chọn lo số (1~{0})",listlabel.Length);
+            string input = Console.ReadLine();
+
+            int.TryParse(input,out var userchoise);
+            while (userchoise>listlabel.Length|| userchoise<1)
             {
                 Console.WriteLine($"Vui lòng chọn loại hàng số (1~{listlabel.Length})");
                 userchoise = int.Parse(Console.ReadLine()!);
@@ -92,9 +93,9 @@ namespace ManageStore
             return listlabel[userchoise-1];
         }
 
-        public static void createfistdata(ref Store data)
+        public static void CreateFirstData(ref Store data)
         {
-            bool auto = true;
+            bool auto;
             Console.WriteLine("Bạn muốn tạo dữ liệu mẫu:(y/n) ");
             // ReSharper disable once PossibleNullReferenceException
             string choise = Console.ReadLine().ToLower();
