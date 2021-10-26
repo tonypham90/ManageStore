@@ -91,7 +91,7 @@ namespace ManageStore
             packaged.Type = RandItemDetail(Type);
             packaged.Name = RandName(packaged.Type);
             packaged.Qty = ran.Next(1, 100);
-            packaged.Mfg.Month = ran.Next(13);
+            packaged.Mfg.Month = ran.Next(1,13);
             packaged.Mfg.Year = ran.Next(19, 21);
             packaged.Exp = RandDate(packaged.Mfg);
             packaged.Com = RandItemDetail(Brand);
