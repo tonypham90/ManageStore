@@ -8,13 +8,15 @@ namespace ManageStore
         // ReSharper disable once UnusedParameter.Local
         private static void Main(string[] args)
         {
-            Console.OutputEncoding = Encoding.UTF8;
-            Console.InputEncoding = Encoding.UTF8;
-            Console.WriteLine();
+            // Console.OutputEncoding = Encoding.UTF8;
+            // Console.InputEncoding = Encoding.UTF8;
+            // Console.WriteLine();
             Store warehouse = new Store();
             Function.CreateFirstData(ref warehouse);
-            Function.PrintTable(warehouse);
-            
+            Function.PrintTable(warehouse,true);
+            Function.adddata(ref warehouse,2);
+            Function.PrintTable(warehouse,false);
+
         }
     }
 }

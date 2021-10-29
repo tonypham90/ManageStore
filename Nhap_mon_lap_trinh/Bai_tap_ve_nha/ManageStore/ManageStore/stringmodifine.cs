@@ -15,27 +15,29 @@ namespace ManageStore
 
         public static Date InputDate()
         {
-            int month = 0, year = 0;
+            int year = 0;
             Date date;
-            bool checkMonth = false, checkYear = false;
+            bool checkYear = false;
             // ReSharper disable once ConditionIsAlwaysTrueOrFalse
             // ReSharper disable once LoopVariableIsNeverChangedInsideLoop
-            while (checkMonth == false)
-            {
-                Console.WriteLine("Month(1~12): ");
-                month = int.Parse(Console.ReadLine()!);
-                /*Check value input*/
-                if (month is < 13 and > 0)
-                    checkMonth = true;
-                else
-                    Console.WriteLine("Your input may be higher 12 or lower 0, please input againt");
-            }
+            
+            // while (checkMonth == false)
+            // {
+            //     Console.WriteLine("Month(1~12): ");
+            //     month = int.Parse(Console.ReadLine()!);
+            //     /*Check value input*/
+            //     if (month is < 13 and > 0)
+            //         checkMonth = true;
+            //     else
+            //         Console.WriteLine("Your input may be higher 12 or lower 0, please input againt");
+            // }
+            int month = Inputnumber("Tháng (1~12): ", 1, 12);
 
             // ReSharper disable once ConditionIsAlwaysTrueOrFalse
             // ReSharper disable once LoopVariableIsNeverChangedInsideLoop
             while (checkYear == false)
             {
-                Console.WriteLine("Year (yyyy or yy): ");
+                Console.Write("năm (yyyy hoặc yy): ");
                 year = int.Parse(Console.ReadLine()!);
                 if (year > 0 && (year < 100 || year > 1900))
                 {
@@ -44,7 +46,7 @@ namespace ManageStore
                 }
                 else
                 {
-                    Console.WriteLine("Your input may be higher 12 or lower 0, please input againt");
+                    Console.WriteLine("Vui lòng nhập năm theo định dạng yyyy hoặc yy(ví dụn 2021 hoặc 21)");
                 }
             }
 
@@ -78,8 +80,8 @@ namespace ManageStore
         public static void EndSeparate()
         {
             string dast = null;
-            var countdast = Limitcty + Limithd + Limitlh + Limitmsp + Limitsl + Limitsx + Limitth + 3 * 8;
-            for (var i = 0; i < countdast; i++) dast += "-";
+            var countdast = Limitcty + Limithd + Limitlh + Limitmsp + Limitsl + Limitsx + Limitth + 3 * 8-2;
+            for (var i = 0; i < countdast; i++) dast += "~";
             Console.WriteLine(dast);
         }
 
@@ -119,6 +121,80 @@ namespace ManageStore
         {
             var textdate = $"{a.Month:00}/{a.Year:00}";
             return textdate;
+        }
+
+        public static int Inputnumber(string note,int min,int max)
+        {
+            Console.Write(note);
+            string input;
+            input = Console.ReadLine();
+            bool check = int.TryParse(input,out var value);
+            while (check == false||min>value||value>max)
+            {
+                Console.Write($"Vui lòng nhập đúng giá trị trong khoản {min}~{max}");
+                input = Console.ReadLine();
+                check = int.TryParse(input,out value);
+            }
+
+            return value;
+
+        } //Gioi han nhap gia tri
+
+        public static bool Inputyn(string note)
+        {
+            Console.Write(note);
+            string input = Console.ReadLine()?.ToLower();
+            bool check,choise;
+            switch (input)
+            {
+                case "y":
+                    check = true;
+                    break;
+                case "n":
+                    check = true;
+                    break;
+                default:
+                    check = false;
+                    break;
+            }
+            while (check == false)
+            {
+                Console.Write("Vui lòng nhập đúng giá trị y:Đồng ý, n: từ chối: ");
+                input = Console.ReadLine()?.ToLower();
+                switch (input)
+                {
+                    case "y":
+                        check = true;
+                        break;
+                    case "n":
+                        check = true;
+                        break;
+                }
+            }
+
+            switch (input)
+            {
+                case "y":
+                    choise = true;
+                    break;
+                default:
+                    choise = false;
+                    break;
+                    
+            }
+
+            return choise;
+        }
+        //Nhap gia tri han su dung theo so thang
+        public static Date inputexp(string note, Date MFG)
+        {
+            Console.WriteLine(note);
+            Date exp;
+            int expmonth = Inputnumber("Giá trị từ 1~100: ", 1, 100);
+            int totalmonth = (expmonth + MFG.Month);
+            exp.Month = totalmonth % 12;
+            exp.Year = totalmonth / 12+MFG.Year;
+            return exp;
         }
     }
 }
