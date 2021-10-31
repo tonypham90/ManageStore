@@ -4,7 +4,7 @@ namespace ManageStore
 {
     public class Stringmodifine
     {
-        /*Width of column*/
+        /*Width of column gioi han so space in trong bang*/
         private const int Limitmsp = 11,
             Limitth = 30,
             Limitsl = 8,
@@ -12,7 +12,7 @@ namespace ManageStore
             Limitsx = 11,
             Limitlh = 11,
             Limitcty = 20;
-
+        
         public static Date InputDate()
         {
             int year = 0;
@@ -54,8 +54,8 @@ namespace ManageStore
             date.Year = year;
             return date;
         }
-
-        public static string FixText(string field, int limitChar)
+//cố định định dạng bảng khi in kết quả ra trong bảng
+        public static string FixFormatTableText(string field, int limitChar)
         {
             // Gioi han so luong ky tu in;
             string texta = null;
@@ -74,6 +74,20 @@ namespace ManageStore
 
             return texta;
         }
+//cố định giá trị string được nhập vào
+        public static string Inputlimittext(string ghichu, int limit)
+        {
+            Console.Write($"{ghichu}({limit} ký tự");
+            string input = Console.ReadLine()!.ToUpper();
+            while (input.Length != limit)
+            {
+                Console.WriteLine($"Vui lòng nhập {limit} ký tự");
+                Console.Write("Giá trị: ");
+                input = Console.ReadLine()!.ToUpper();
+            }
+
+            return input;
+        }
 
         //Printout format table
         // Header Table format
@@ -89,13 +103,13 @@ namespace ManageStore
         {
             EndSeparate();
             string id, name, exp, mfg, com, type, qty;
-            id = FixText("Mã Sản Phẩm", Limitmsp);
-            name = FixText("Tên Hàng", Limitth);
-            qty = FixText("Số lượng", Limitsl);
-            exp = FixText("HSD (mm/yy)", Limithd);
-            mfg = FixText("NSX (mm/yy)", Limitsx);
-            com = FixText("Cty sản xuất", Limitcty);
-            type = FixText("Loại hàng", Limitlh);
+            id = FixFormatTableText("Mã Sản Phẩm", Limitmsp);
+            name = FixFormatTableText("Tên Hàng", Limitth);
+            qty = FixFormatTableText("Số lượng", Limitsl);
+            exp = FixFormatTableText("HSD (mm/yy)", Limithd);
+            mfg = FixFormatTableText("NSX (mm/yy)", Limitsx);
+            com = FixFormatTableText("Cty sản xuất", Limitcty);
+            type = FixFormatTableText("Loại hàng", Limitlh);
             var text = $"| {id} | {name} | {qty} | {exp} | {mfg} | {com} | {type} |";
 
             Console.WriteLine(text);
@@ -106,13 +120,13 @@ namespace ManageStore
         public static void PrintItem(Item a)
         {
             string id, name, exp, mfg, com, type, qty;
-            id = FixText(a.Id, Limitmsp);
-            name = FixText(a.Name, Limitth);
-            qty = FixText(a.Qty.ToString(), Limitsl);
-            exp = FixText(DateString(a.Exp), Limithd);
-            mfg = FixText(DateString(a.Mfg), Limitsx);
-            com = FixText(a.Com, Limitcty);
-            type = FixText(a.Type, Limitlh);
+            id = FixFormatTableText(a.Id, Limitmsp);
+            name = FixFormatTableText(a.Name, Limitth);
+            qty = FixFormatTableText(a.Qty.ToString(), Limitsl);
+            exp = FixFormatTableText(DateString(a.Exp), Limithd);
+            mfg = FixFormatTableText(DateString(a.Mfg), Limitsx);
+            com = FixFormatTableText(a.Com, Limitcty);
+            type = FixFormatTableText(a.Type, Limitlh);
             Console.WriteLine($"| {id} | {name} | {qty} | {exp} | {mfg} | {com} | {type} |");
         }
 
@@ -186,15 +200,24 @@ namespace ManageStore
             return choise;
         }
         //Nhap gia tri han su dung theo so thang
-        public static Date inputexp(string note, Date MFG)
+        public static Date Inputexp(string note, Date mfg)
         {
             Console.WriteLine(note);
             Date exp;
             int expmonth = Inputnumber("Giá trị từ 1~100: ", 1, 100);
-            int totalmonth = (expmonth + MFG.Month);
+            int totalmonth = (expmonth + mfg.Month);
             exp.Month = totalmonth % 12;
-            exp.Year = totalmonth / 12+MFG.Year;
+            exp.Year = totalmonth / 12+mfg.Year;
             return exp;
         }
+
+        public static void PrintStringArray(string[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine($"{i+1}. {array[i]}");
+            }
+        }
+
     }
 }

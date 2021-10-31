@@ -1,12 +1,11 @@
 using System;
-using System.Linq;
 
 namespace ManageStore
 {
     public class Sample
     {
         private const string Chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-        private static readonly Random ran = new();
+        private static readonly Random Ran = new();
 
 
         private protected static string[] Food = { "Chuối".ToUpper(), "Sữa", "Trứng", "Cà phê", "Mì gói" };
@@ -27,8 +26,12 @@ namespace ManageStore
             bool duplicateCheck = true;
             while (duplicateCheck)
             {
-                newid = new string(Enumerable.Repeat(Chars, 4).Select(s => s[ran.Next(s.Length)]).ToArray());
-                duplicateCheck = Function.Duplicatecheckid(newid, items);
+                for (int i = 0; i < 4; i++)
+                {
+                    int index = Ran.Next(0, Chars.Length);
+                    newid += Chars[index];
+                }
+                duplicateCheck = Check.Duplicatecheckid(newid, items);
             }
 
             return newid;
@@ -36,15 +39,15 @@ namespace ManageStore
 
         public static string RandItemDetail(string[] detail)
         {
-            int id = ran.Next(0, detail.Length);
+            int id = Ran.Next(0, detail.Length);
             string detailValue = detail[id].ToUpper();
-            Console.WriteLine(detailValue);
+            // Console.WriteLine(detailValue);
             return detailValue;
         }
 
         public static string RandName(string lable)
         {
-            string ItemName;
+            string itemName;
             string[] item;
             switch (lable)
             {
@@ -59,19 +62,18 @@ namespace ManageStore
                     break;
             }
 
-            ItemName = item[ran.Next(0, item.Length)].ToUpper();
-            Console.WriteLine(ItemName);
-            return ItemName;
+            itemName = item[Ran.Next(0, item.Length)].ToUpper();
+            return itemName;
         }
 
         public static Date RandDate(Date min)
         {
             Date value;
-            value.Year = ran.Next(min.Year, min.Year + 6);
+            value.Year = Ran.Next(min.Year, min.Year + 6);
             if (value.Year > min.Year)
-                value.Month = ran.Next(1, 13);
+                value.Month = Ran.Next(1, 13);
             else
-                value.Month = ran.Next(min.Month, 13);
+                value.Month = Ran.Next(min.Month, 13);
             return value;
         }
 
@@ -86,15 +88,18 @@ namespace ManageStore
                 indexofelement += 1;
             }
             
-            Console.WriteLine(note);
+            // Console.WriteLine(note);
             packaged.Id = RanId(warehouse.ItemsList);
+            // Console.WriteLine($"Mã hàng: {packaged.Id}");
             packaged.Type = RandItemDetail(Type);
+            // Console.WriteLine($"Loại Hàng:  {packaged.Type}");
             packaged.Name = RandName(packaged.Type);
-            packaged.Qty = ran.Next(1, 100);
-            packaged.Mfg.Month = ran.Next(1,13);
-            packaged.Mfg.Year = ran.Next(19, 21);
+            packaged.Qty = Ran.Next(1, 100);
+            packaged.Mfg.Month = Ran.Next(1,13);
+            packaged.Mfg.Year = Ran.Next(19, 21);
             packaged.Exp = RandDate(packaged.Mfg);
             packaged.Com = RandItemDetail(Brand);
+            Console.WriteLine($"{note}\nMã Hàng: {packaged.Id}, Tên Hàng: {packaged.Name}, Số lượng: {packaged.Qty}, Ngày sản xuất:{Stringmodifine.DateString(packaged.Mfg)}, Hạn Dùng:{Stringmodifine.DateString(packaged.Exp)} , Công ty: {packaged.Com}, Loại Hàng {packaged.Type}");
 
             return packaged;
         }

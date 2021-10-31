@@ -1,120 +1,26 @@
 using System;
-using System.Diagnostics;
 
 namespace ManageStore
 {
     public class Function
     {
-        public static void PrintTable(Store data,bool clearconsole)
-        {
-            switch (clearconsole)
-            {
-                case true:
-                    Console.Clear();
-                    break;
-            }
-            Stringmodifine.HeaderTable();
-            int noitems = data.ItemsList.Length;
-            switch (noitems)
-            {
-                case 0:
-                    break;
-                default:
-                    foreach (var item in data.ItemsList) Stringmodifine.PrintItem(item);
-                    break;
-            }
-            Stringmodifine.EndSeparate();
-        }
-        //kiem tra gia tri trung lap
-        public static bool Duplicatecheckid(string value, Item[] items)
-        {
-            int count = 0;
-            bool check = false;
-            if (items != null)
-                foreach (var element in items)
-                    if (element.Id == value)
-                        count += 1;
-
-            if (count > 0) check = true;
-
-            return check;
-        }
-        //kiem tra gia tri loai hang trung lap
-        public static bool DuplicatecheckLable(string value, Store data)
-        {
-            int count = 0;
-            bool check = false;
-            if (data.Label != null)
-                foreach (var element in data.Label)
-                    if (element == value)
-                        count += 1;
-
-            if (count > 0) check = true;
-
-            return check;
-        }
-
-        // Nhap gia tri vao
-        public static Item InputItem(string ghichu, Store warehouse, bool auto)
-        {
-            var item = new Item();
-            Console.WriteLine(ghichu);
-            if (auto)
-            {
-                item = Sample.RandItem("Tạo hàng tự động", warehouse);
-            }
-            else
-            {
-                Console.Write("1. Mã Sản Phẩm: ");
-                item.Id = Sample.RanId(warehouse.ItemsList);
-                Console.Write(item.Id);
-                item.Type = SelectLabel("\n2. Loại sản phẩm: ",warehouse);
-                Console.Write("3. Tên sản phẩm: ");
-                item.Name = Console.ReadLine()!.ToUpper();
-                Console.Write("4. Số lượng: ");
-                item.Qty = int.Parse(Console.ReadLine()!);
-                Console.WriteLine("5. Ngày sản xuất: ");
-                item.Mfg = Stringmodifine.InputDate();
-                item.Exp = Stringmodifine.inputexp("Số tháng sử dụng",item.Mfg);
-                Console.Write("Công ty: ");
-                item.Com = Console.ReadLine()!;
-            }
-
-            return item;
-        }
-        
-        //control chon lable
-        public static string SelectLabel(string note, Store data)
-        {
-            Console.WriteLine(note);
-            string[] listlabel = data.Label;
-            for (int i = 0; i < listlabel.Length; i++)
-            {
-                string text = $"{i + 1}. {listlabel[i]}";
-                Console.WriteLine(text);
-            }
-            string inputtext = $"lựa chọn loại hàng (1~{listlabel.Length}): ";
-            int userchoise = Stringmodifine.Inputnumber(inputtext, 1, listlabel.Length);
-            return listlabel[userchoise-1];
-        }
-
-       //tao data dau vao
+        //tao data dau vao
         public static void CreateFirstData(ref Store data)
         {
-            bool auto = Stringmodifine.Inputyn("Bạn muốn tạo dữ liệu mẫu:(y/n): ");
+            Stringmodifine.EndSeparate();
+            bool auto = Stringmodifine.Inputyn("Bạn có muốn tạo dữ liệu mẫu:(y/n): ");
             //setup bắt đầu
-
             switch (auto)
            {
                 case true:
                     data.Label = Sample.Type;
-                    Console.Write("Số lô hàng mẫu muốn thêm vào");
+                    Console.Write("Số lô hàng mẫu vào: ");
                     int noPackaged = int.Parse(Console.ReadLine()!);
                     data.ItemsList = new Item[noPackaged];
                     for (int i = 0; i < noPackaged; i++)
                     {
                         string text = $"Lô hàng thứ {i + 1}";
-                        data.ItemsList[i] = InputItem(text,data,true);
+                        data.ItemsList[i] = ArrayManipulate.InputItem(text,data,true);
                     }
                     break;
                 default:
@@ -128,12 +34,12 @@ namespace ManageStore
                         string text = $"Loại hàng thứ {i+1}: ";
                         Console.Write(text);
                         string output = Console.ReadLine()!.ToUpper();
-                        bool check = DuplicatecheckLable(output, data);
+                        bool check = Check.DuplicatecheckLable(output, data);
                         while (check)
                         {
                             Console.Write("Giá trị đã tồn tại, vui lòng nhập lại: ");
                             output = Console.ReadLine()!.ToUpper();
-                            check = DuplicatecheckLable(output, data);
+                            check = Check.DuplicatecheckLable(output, data);
                         }
 
                         data.Label[i] = output;
@@ -144,38 +50,245 @@ namespace ManageStore
                     for (int j = 0; j < noPackagedmanual; j++)
                     {
                         string text = $"Lô hàng thứ {j + 1}";
-                        data.ItemsList[j] = InputItem(text,data,false);
+                        data.ItemsList[j] = ArrayManipulate.InputItem(text,data,false);
                     }
                     break;
             }
         }
-        
-        //Them data
-        public static void adddata(ref Store data,int noRow)
+
+        //Them du lieu co san vao data dung search item
+        public static void AddItemtoData(ref Store data,Item newItems)
         {
-            Console.WriteLine($"Nhập thêm {noRow} lô hàng vào kho");
-            bool auto = Stringmodifine.Inputyn("Bạn muốn tạo lô hàng tự động?(y/n): ");
-            for (int i = 0; i < noRow; i++)
+            
+            Item[] newitItemslist = new Item[data.ItemsList.Length+1];
+            for (int j = 0; j < data.ItemsList.Length; j++)
             {
-                //tang them 1 element cho array
-                Item[] newitItemslist = new Item[data.ItemsList.Length+1];
-                for (int j = 0; j < data.ItemsList.Length; j++)
-                {
-                    newitItemslist[j] = data.ItemsList[j];
-                }
-
-                data.ItemsList = newitItemslist;
-                data.ItemsList[^1] = InputItem($"Nhập lô hàng thứ {i+1}", data, auto);
-
+                newitItemslist[j] = data.ItemsList[j];
             }
 
-
+            data.ItemsList = newitItemslist;
+            data.ItemsList[^1] = newItems;
         }
 
-        // public static Item[] FindItems(Store data)
+        
+        public static void FindItems(Store data)
+        {
+            Stringmodifine.EndSeparate();
+            Store result;
+            result.ItemsList = new Item[0];
+            result.Label = data.Label;
+            Console.WriteLine("Lựa chọn các chức năng tìm kiếm sau:\n1. Mã sản phầm\n2.Tên sản phẩm\n3. Loại hàng hóa");
+            int userchoise = Stringmodifine.Inputnumber("Lựa chọn của bạn (1~3)", 1, 3);
+            string inputvalue;
+            switch (userchoise)
+            {
+                case 1:// tim kiem theo mã hàng
+                    //Console.Write("Nhập giá trị tìm kiếm theo mã hàng hóa (4 ký tự)");
+                    inputvalue = Stringmodifine.Inputlimittext("Tìm kiếm theo mã hàng hoán\nNhập giá trị tìm kiếm",4);
+                    foreach (Item eachItem in data.ItemsList)
+                    {
+                        if (Check.Findvalue(inputvalue,eachItem.Id,false))
+                        {
+                            AddItemtoData(ref result,eachItem);
+                        }
+                    }
+                    break;
+                case 2://Tim kiem theo ten san pham
+                    Console.WriteLine("Tìm kiếm theo tên sản phẩm");
+                    Console.WriteLine("Chọn phương pháp tìm kiếm:\n1. Tìm theo ký tự\n2. Tìm theo viết tắt ký tự đầu mỗi từ");
+                    int method = Stringmodifine.Inputnumber("Phương pháp (1~2): ", 1, 2);
+                    bool fistletter;
+                    switch (method)
+                    {
+                        case 2:
+                            fistletter = true;
+                            Console.WriteLine("Vui lòng nhập các ký tự đầu của mỗi từ không khoản cách");
+                            break;
+                        default:
+                            fistletter = false;
+                            Console.WriteLine("Vui lòng nhập từ bạn muốn tìm kiếm");
+                            break;
+                    }
+                    Console.Write("Giá trị tìm kiếm: ");
+                    string input = Console.ReadLine()!.ToUpper();
+                    foreach (Item eachItem in data.ItemsList)
+                    {
+                        if (Check.Findvalue(input,eachItem.Name,fistletter))
+                        {
+                            AddItemtoData(ref result,eachItem);
+                        }
+                    }
+                    break;
+                case 3://Tim kiem theo loai hang
+                    Console.WriteLine("Tìm kiếm theo loại hàng");
+                    Console.WriteLine("Các loại hàng trong kho:");
+                    for (int i = 0; i < data.Label.Length; i++)
+                    {
+                        Console.WriteLine($"{i+1}. {data.Label[i]}");
+                    }
+
+                    int choise = Stringmodifine.Inputnumber($"Giá trị lựa chọn (1~{data.Label.Length})", 1,
+                        data.Label.Length);
+                    string inputlabel = data.Label[choise - 1];
+                    foreach (Item eachItem in data.ItemsList)
+                    {
+                        if (Check.Findvalue(inputlabel,eachItem.Type,false))
+                        {
+                            AddItemtoData(ref result,eachItem);
+                        }
+                    }
+                    break;
+            }
+
+            if (result.ItemsList.Length<1)
+            {
+                Console.WriteLine("Kết quả tìm kiếm: không có giá trị nào được tìm thấy");
+            }
+            else
+            {
+                Print.PrintTable(result,true);
+            }
+            
+
+        }
+        //Them 1 element vao array
+        public static void Addstring(ref string[] array, string element)
+        {
+            string[] newarray = new string[array.Length + 1];
+            for (int i = 0; i < array.Length; i++)
+            {
+                newarray[i] = array[i];
+            }
+
+            newarray[^1] = element;
+            array = newarray;
+        }
+        //xoa 1 string trong array
+        public static void Removestring(ref string[] array, string target)
+        {
+            //tim do dai array sau khi da xoa du lieu
+            int[] rListIndexremove;
+            int count = 0,newindex=0;
+            foreach (string element in array)
+            {
+                if (element == target)
+                {
+                    count += 1;
+                }
+            }
+//danh sach id cac element trung trong list
+            rListIndexremove = new int[count];
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i]==target)
+                {
+                    rListIndexremove[newindex] = i;
+                    newindex += 1;
+                }
+            }
+
+            string[] newarray = new string[array.Length - rListIndexremove.Length];
+            int indexnewarray = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                int countindexremove = 0;
+                for (int j = 0; j < rListIndexremove.Length; j++)
+                {
+                    if (i==rListIndexremove[j])
+                    {
+                        countindexremove += 1;
+                    }
+                }
+
+                switch (countindexremove)
+                {
+                    case 0:
+                        newarray[indexnewarray] = array[i];
+                        indexnewarray += 1;
+                        break;
+                }
+            }
+
+            array = newarray;
+        }
+//xoa 1 item trong array items
+        public static void RemoveItem(ref Item[] listItems, string[] listIdStrings)
+        {
+            //tim do dai array sau khi xoa item
+            int countRemove = 0;
+            foreach (Item item in listItems)
+            {
+                foreach (string idString in listIdStrings)
+                {
+                    if (idString == item.Id)
+                    {
+                        countRemove += 1;
+                    }
+                }
+            }
+            Item[] newItemsList = new Item[listItems.Length - countRemove];
+            int newindex = 0;
+            for (int i = 0; i < listItems.Length; i++)
+            {
+                int countid = 0;
+                for (int j = 0; j < listIdStrings.Length; j++)
+                {
+                    if (listItems[i].Id == listIdStrings[j])
+                    {
+                        countid += 1;
+                    }
+                }
+
+                switch (countid)
+                {
+                    case 0:
+                        newItemsList[newindex] = listItems[i];
+                        newindex += 1;
+                        break;
+                }
+            }
+
+            listItems = newItemsList;
+
+        }
+        //Sua thong tin
+        // public static void editLable(ref Store data)
         // {
-        //     
-        // }
+        //     Stringmodifine.EndSeparate();
+        //     Console.WriteLine("Danh mục các loại hàng:");
+        //     for (int i = 0; i < data.Label.Length; i++)
+        //     {
+        //         Console.WriteLine($"{i+1}. {data.Label[i]}");
+        //     }
+        //     //khi xóa sẽ xóa hết dữ liệu cùng label và khi đổi thì toàn bộ cùng đổi
+        //     Console.WriteLine("Các lệnh sửa đổi loại hàng:");
+        //     int userchoise=Stringmodifine.Inputnumber("1. Thêm\n2. Sửa thông tin\n3. Xóa", 1, 3);
+        //     switch (userchoise)
+        //     {
+        //         case 1://Them gia tri cho label
+        //             string input = Console.ReadLine()!.ToUpper();
+        //             bool check = DuplicatecheckLable(input, data);
+        //             while (check==false)
+        //             {
+        //                 Console.Write("Thông số nhập vào đã tồn tại,Vui lòng nhập lại giá trị: ");
+        //                 input = Console.ReadLine()!.ToUpper();
+        //                 check = DuplicatecheckLable(input, data);
+        //             }
+        //
+        //             string[] newlabel = new string[data.Label.Length + 1];
+        //             for (int j = 0; j < data.Label.Length; j++)
+        //             {
+        //                 newlabel[j] = data.Label[j];
+        //             }
+        //
+        //             newlabel[^1] = input;
+        //             break;
+        //         case 2:
+        //             
+        //     }
+
+        }
+        
         // dang doi ham replace, remove va find.
         // public static void updateLabel(ref Store data)
         // {
@@ -187,4 +300,3 @@ namespace ManageStore
         //     
         // }
     }
-}
