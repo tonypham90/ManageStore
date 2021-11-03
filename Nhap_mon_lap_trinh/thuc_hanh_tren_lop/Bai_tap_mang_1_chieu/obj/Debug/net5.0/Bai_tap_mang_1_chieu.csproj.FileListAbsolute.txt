@@ -1,0 +1,5 @@
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/Bai_tap_mang_1_chieu/obj/Debug/net5.0/Bai_tap_mang_1_chieu.csproj.AssemblyReference.cache
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/Bai_tap_mang_1_chieu/obj/Debug/net5.0/Bai_tap_mang_1_chieu.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/Bai_tap_mang_1_chieu/obj/Debug/net5.0/Bai_tap_mang_1_chieu.AssemblyInfoInputs.cache
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/Bai_tap_mang_1_chieu/obj/Debug/net5.0/Bai_tap_mang_1_chieu.AssemblyInfo.cs
+/Users/tonypham/Documents/GitHub/khoahoctunhien/Nhap_mon_lap_trinh/thuc_hanh_tren_lop/Bai_tap_mang_1_chieu/obj/Debug/net5.0/Bai_tap_mang_1_chieu.csproj.CoreCompileInputs.cache
