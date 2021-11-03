@@ -2,16 +2,9 @@ using System;
 
 namespace ManageStore
 {
-    public class Stringmodifine
+    public class stringmodifine
     {
-        /*Width of column gioi han so space in trong bang*/
-        private const int Limitmsp = 11,
-            Limitth = 30,
-            Limitsl = 8,
-            Limithd = 10,
-            Limitsx = 11,
-            Limitlh = 11,
-            Limitcty = 20;
+        
         
         public static Date InputDate()
         {
@@ -54,26 +47,7 @@ namespace ManageStore
             date.Year = year;
             return date;
         }
-//cố định định dạng bảng khi in kết quả ra trong bảng
-        public static string FixFormatTableText(string field, int limitChar)
-        {
-            // Gioi han so luong ky tu in;
-            string texta = null;
-            var limit = Math.Min(field.Length, limitChar);
-            if (limit < limitChar)
-            {
-                for (var i = 0; i < field.Length; i++) texta += field[i].ToString();
-
-                // ReSharper disable once PossibleNullReferenceException
-                while (texta.Length < limitChar) texta += " ";
-            }
-            else
-            {
-                for (var i = 0; i < limitChar; i++) texta += field[i].ToString();
-            }
-
-            return texta;
-        }
+        
 //cố định giá trị string được nhập vào
         public static string Inputlimittext(string ghichu, int limit)
         {
@@ -88,47 +62,7 @@ namespace ManageStore
 
             return input;
         }
-
-        //Printout format table
-        // Header Table format
-        public static void EndSeparate()
-        {
-            string dast = null;
-            var countdast = Limitcty + Limithd + Limitlh + Limitmsp + Limitsl + Limitsx + Limitth + 3 * 8-2;
-            for (var i = 0; i < countdast; i++) dast += "~";
-            Console.WriteLine(dast);
-        }
-
-        public static void HeaderTable()
-        {
-            EndSeparate();
-            string id, name, exp, mfg, com, type, qty;
-            id = FixFormatTableText("Mã Sản Phẩm", Limitmsp);
-            name = FixFormatTableText("Tên Hàng", Limitth);
-            qty = FixFormatTableText("Số lượng", Limitsl);
-            exp = FixFormatTableText("HSD (mm/yy)", Limithd);
-            mfg = FixFormatTableText("NSX (mm/yy)", Limitsx);
-            com = FixFormatTableText("Cty sản xuất", Limitcty);
-            type = FixFormatTableText("Loại hàng", Limitlh);
-            var text = $"| {id} | {name} | {qty} | {exp} | {mfg} | {com} | {type} |";
-
-            Console.WriteLine(text);
-            EndSeparate();
-        }
-
-        //in gia tri cua lo hang
-        public static void PrintItem(Item a)
-        {
-            string id, name, exp, mfg, com, type, qty;
-            id = FixFormatTableText(a.Id, Limitmsp);
-            name = FixFormatTableText(a.Name, Limitth);
-            qty = FixFormatTableText(a.Qty.ToString(), Limitsl);
-            exp = FixFormatTableText(DateString(a.Exp), Limithd);
-            mfg = FixFormatTableText(DateString(a.Mfg), Limitsx);
-            com = FixFormatTableText(a.Com, Limitcty);
-            type = FixFormatTableText(a.Type, Limitlh);
-            Console.WriteLine($"| {id} | {name} | {qty} | {exp} | {mfg} | {com} | {type} |");
-        }
+        
 
         //in dinh dang ngay thang
         public static string DateString(Date a) /*in dinh dang ngay thang cho du lieu struct Date*/

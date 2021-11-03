@@ -7,27 +7,24 @@ namespace ManageStore
         // ReSharper disable once UnusedParameter.Local
         private static void Main(string[] args)
         {
-            // Console.OutputEncoding = Encoding.UTF8;
-            // Console.InputEncoding = Encoding.UTF8;
-            // Console.WriteLine();
-            
+
             // test create data
-            // Console.Clear();
-            // Print.FirstNote();
-            // Store warehouse = new Store();
-            // Function.CreateFirstData(ref warehouse);
-            // Print.PrintTable(warehouse,true);
-            // Function.ManualAddData(ref warehouse,2);
-            // Console.Clear(); 
-            // Print.PrintTable(warehouse,false);
-            // bool show = true;
-            // while (show)
-            // {
-            //     Function.FindItems(warehouse);
-            //     show = Stringmodifine.Inputyn("Bạn có muốn tìm giá trị khác không?");
-            // }
+            Console.Clear();
+            Print.FirstNote();
+            Store warehouse = new Store();
+            Function.CreateFirstData(ref warehouse);
+            Print.PrintTable(warehouse,true);
+            ArrayManipulate.InsertMultiItem(ref warehouse,2);
+            Console.Clear(); 
+            Print.PrintTable(warehouse,false);
+            bool show = true;
+            while (show)
+            {
+                Function.FindItems(warehouse);
+                show = stringmodifine.Inputyn("Bạn có muốn tìm giá trị khác không?");
+            }
             
-            Console.Write(Function.Findvalue(Console.ReadLine(),Console.ReadLine(),true));
+            //Console.Write(Check.Findvalue(Console.ReadLine(),Console.ReadLine(),true));
             
     
 
@@ -48,10 +45,10 @@ namespace ManageStore
             // Function.PrintTable(warehouse,false);
             
             // string[] newlable = warehouse.Label;
-            // Stringmodifine.PrintStringArray(newlable);
+            // stringmodifine.PrintStringArray(newlable);
             // Console.WriteLine("nhap gia tri can xoa");
             // Function.Removestring(ref newlable,Console.ReadLine());
-            // Stringmodifine.PrintStringArray(newlable);
+            // stringmodifine.PrintStringArray(newlable);
             //
 
 

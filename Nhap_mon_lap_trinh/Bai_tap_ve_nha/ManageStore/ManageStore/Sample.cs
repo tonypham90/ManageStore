@@ -99,7 +99,7 @@ namespace ManageStore
             packaged.Mfg.Year = Ran.Next(19, 21);
             packaged.Exp = RandDate(packaged.Mfg);
             packaged.Com = RandItemDetail(Brand);
-            Console.WriteLine($"{note}\nMã Hàng: {packaged.Id}, Tên Hàng: {packaged.Name}, Số lượng: {packaged.Qty}, Ngày sản xuất:{Stringmodifine.DateString(packaged.Mfg)}, Hạn Dùng:{Stringmodifine.DateString(packaged.Exp)} , Công ty: {packaged.Com}, Loại Hàng {packaged.Type}");
+            Console.WriteLine($"{note}\nMã Hàng: {packaged.Id}, Tên Hàng: {packaged.Name}, Số lượng: {packaged.Qty}, Ngày sản xuất:{stringmodifine.DateString(packaged.Mfg)}, Hạn Dùng:{stringmodifine.DateString(packaged.Exp)} , Công ty: {packaged.Com}, Loại Hàng {packaged.Type}");
 
             return packaged;
         }

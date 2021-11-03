@@ -1,3 +1,5 @@
+using System;
+
 namespace ManageStore
 {
     public class Check
@@ -88,6 +90,7 @@ namespace ManageStore
 
             return content;
         }
+        
 
     }
 }
