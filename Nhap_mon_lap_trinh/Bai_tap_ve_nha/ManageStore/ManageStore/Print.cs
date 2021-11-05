@@ -16,7 +16,15 @@ namespace ManageStore
         public static void EndSeparate()
         {
             string dast = null;
-            var countdast = Limitcty + Limithd + Limitlh + Limitmsp + Limitsl + Limitsx + Limitth + 3 * 8-2;
+            int     countdast = Limitcty + Limithd + Limitlh + Limitmsp + Limitsl + Limitsx + Limitth + 3 * 8-2;
+            for (int i = 0; i < countdast; i++) dast += "~";
+            Console.WriteLine(dast);
+        }
+        // seperate midle function
+        public static void MidSeparate()
+        {
+            string dast = null;
+            var countdast = (Limitcty + Limithd + Limitlh + Limitmsp + Limitsl + Limitsx + Limitth + 3 * 8-2)/2;
             for (var i = 0; i < countdast; i++) dast += "~";
             Console.WriteLine(dast);
         }
@@ -89,14 +97,10 @@ namespace ManageStore
             Console.WriteLine($"| Mã SP: {id} | Tên: {name} | Số lượng: {qty} | HD: {exp} | NSX: {mfg} | Cty SX: {com} | Loại hàng: {type} |");
         }
 
-        public static void PrintTable(Store data,bool clearconsole)
+        public static void PrintTable(string TableName, Store data)
                 {
-                    switch (clearconsole)
-                    {
-                        case true:
-                            Console.Clear();
-                            break;
-                    }
+                    EndSeparate();
+                    Console.WriteLine($"BẢNG: {TableName.ToUpper()}");
                     HeaderTable();
                     int noitems = data.ItemsList.Length;
                     switch (noitems)
@@ -119,5 +123,15 @@ namespace ManageStore
             row4 = "MSMH:CSC10001 - GVGD: Phạm Minh Tuấn";
             Console.WriteLine($"{row1}\n{row2}\n{row3}\n{row4}");
         }
+
+        public static void PrintElementArray(string note, string[] Array)
+        {
+            Console.WriteLine(note);
+            for (int i = 0; i < Array.Length; i++)
+            {
+                Console.WriteLine($"{i + 1}. {Array[i]}");
+            }
+        }
+        
     }
 }

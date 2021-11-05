@@ -7,7 +7,7 @@ namespace ManageStore
         // Nhap gia tri vao
         public static Item InputItem(string ghichu, Store warehouse, bool auto)
         {
-                    Print.EndSeparate();
+                    Print.MidSeparate();
                     var item = new Item();
                     Console.WriteLine(ghichu);
                     if (auto)
@@ -56,19 +56,19 @@ namespace ManageStore
             for (int i = 0; i < noRow; i++)
             {
                 //tang them 1 element cho array
-                Item[] newitItemslist = new Item[data.ItemsList.Length+1];
+                Item[] newItemsList = new Item[data.ItemsList.Length+1];
                 for (int j = 0; j < data.ItemsList.Length; j++)
                 {
-                    newitItemslist[j] = data.ItemsList[j];
+                    newItemsList[j] = data.ItemsList[j];
                 }
 
-                data.ItemsList = newitItemslist;
-                data.ItemsList[^1] = ArrayManipulate.InputItem($"Nhập lô hàng thứ {i+1}", data, auto);
+                data.ItemsList = newItemsList;
+                data.ItemsList[^1] = InputItem($"Nhập lô hàng thứ {i+1}", data, auto);
 
             }
         }
         //Them 1 element string vao array co san
-        public static void Addstring(ref string[] array, string element)
+        public static void AddNewString(ref string[] array, string element)
         {
             string[] newarray = new string[array.Length + 1];
             for (int i = 0; i < array.Length; i++)
@@ -84,7 +84,7 @@ namespace ManageStore
         public static void ChangeUniqueValue( string valueNeedChange,string newvalue,ref Store data)
         {
             bool duplicate;
-            duplicate = Check.DuplicatecheckLable(newvalue, data);
+            duplicate = Check.DuplicateCheckLabel(newvalue, data);
             if (newvalue == null)
             {
                 Console.WriteLine("Giá trị không thay đổi");
@@ -95,7 +95,7 @@ namespace ManageStore
                 {
                     Console.WriteLine("Giá trị đã tồn tại\nGiá trị mới: ");
                     newvalue = Console.ReadLine()!.ToUpper();
-                    duplicate = Check.DuplicatecheckLable(newvalue, data);
+                    duplicate = Check.DuplicateCheckLabel(newvalue, data);
                     
                 }
                 
@@ -113,7 +113,7 @@ namespace ManageStore
         }
         
         //Thay doi gia tri Items chi phuc vu cho function thay doi gia tri label trong edit label
-        public static void ChangeLabelinEditLabel(ref Item[] packageds, string[] idStrings, string newLabel)
+        public static void ChangeLabelInEditLabel(ref Item[] packageds, string[] idStrings, string newLabel)
         {
             for (int i = 0;  i < packageds.Length; ++i)
             {
@@ -230,6 +230,21 @@ namespace ManageStore
             listItems = newItemsList;
 
         }
+        
+        //Them du lieu co san vao data dung search item
+        public static void AddItemtoData(ref Store data, Item newItems)
+        {
+
+            Item[] newitItemslist = new Item[data.ItemsList.Length + 1];
+            for (int j = 0; j < data.ItemsList.Length; j++)
+            {
+                newitItemslist[j] = data.ItemsList[j];
+            }
+
+            data.ItemsList = newitItemslist;
+            data.ItemsList[^1] = newItems;
+        }
+        
     }
 
 }

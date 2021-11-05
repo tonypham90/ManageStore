@@ -19,7 +19,7 @@ namespace ManageStore
             return check;
         }
         //kiem tra gia tri loai hang trung lap dung cho them lable moi
-        public static bool DuplicatecheckLable(string value, Store data)
+        public static bool DuplicateCheckLabel(string value, Store data)
         {
             int count = 0;
             bool check = false;
@@ -33,7 +33,7 @@ namespace ManageStore
             return check;
         }
         // tim ky tu
-        public static bool Findvalue(string valuelookup, string intext, bool firstlettereachword)
+        public static bool FindValue(string valuelookup, string intext, bool firstlettereachword)
         {
             bool content = false;
             string textcompare;
@@ -42,7 +42,6 @@ namespace ManageStore
             switch (firstlettereachword)
             { 
                 case false:
-                    int index;
                     for (int i = 0; i < intext.Length-valuelookup.Length; i++)
                     {
                         textcompare = null;
