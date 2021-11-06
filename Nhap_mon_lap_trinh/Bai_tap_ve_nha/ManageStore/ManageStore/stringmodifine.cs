@@ -51,11 +51,11 @@ namespace ManageStore
 //cố định giá trị string được nhập vào
         public static string Inputlimittext(string ghichu, int limit)
         {
-            Console.Write($"{ghichu}({limit} ký tự");
+            Console.Write($"{ghichu}({limit} ký tự): ");
             string input = Console.ReadLine()!.ToUpper();
             while (input.Length != limit)
             {
-                Console.WriteLine($"Vui lòng nhập {limit} ký tự");
+                Console.WriteLine($"Vui lòng nhập {limit} ký tự: ");
                 Console.Write("Giá trị: ");
                 input = Console.ReadLine()!.ToUpper();
             }
@@ -65,11 +65,7 @@ namespace ManageStore
         
 
         //in dinh dang ngay thang
-        public static string DateString(Date a) /*in dinh dang ngay thang cho du lieu struct Date*/
-        {
-            var textdate = $"{a.Month:00}/{a.Year:00}";
-            return textdate;
-        }
+        
 
         public static int Inputnumber(string note,int min,int max)
         {

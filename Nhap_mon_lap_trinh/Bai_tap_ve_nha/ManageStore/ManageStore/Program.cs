@@ -13,7 +13,7 @@ namespace ManageStore
             Print.FirstNote();
             Store warehouse = new Store();
             Function.CreateFirstData(ref warehouse);
-            Print.PrintTable("Danh Sách lô hàng trong kho",warehouse);
+            // Print.PrintTable("Danh Sách lô hàng trong kho",warehouse);
             // bool show = true;
             // while (show)
             // {

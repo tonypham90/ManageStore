@@ -64,14 +64,17 @@ namespace ManageStore
         public static void FindItems(Store data)
         {
             Print.EndSeparate();
-            Console.WriteLine("Tìm lô hàng");
+            Console.WriteLine("Tìm lô hàng".ToUpper());
+            Print.MidSeparate();
             Store result;
             result.ItemsList = new Item[0];
             result.Label = data.Label;
             bool show = true;
             while (show)
             {
-                Console.WriteLine("Các chức năng tìm kiếm:\n1. Mã sản phầm\n2.Tên sản phẩm\n3. Loại hàng hóa\n4.Công ty sản xuất\n5. Thoát");
+                Print.MidSeparate();
+                Console.WriteLine("Các chức năng tìm kiếm:\n1. Mã sản phầm\n2. Tên sản phẩm\n3. Loại hàng hóa\n4. Công ty sản xuất\n5. Thoát");
+                Print.MidSeparate();
                 int userchoise = stringmodifine.Inputnumber("Lựa chọn của bạn (1~4)", 1, 4);
                 string inputvalue;
                 bool fistletter;
@@ -80,7 +83,7 @@ namespace ManageStore
                 {
                     case 1: // tim kiem theo mã hàng
                         //Console.Write("Nhập giá trị tìm kiếm theo mã hàng hóa (4 ký tự)");
-                        inputvalue = stringmodifine.Inputlimittext("Tìm kiếm theo mã hàng hoán\nNhập giá trị tìm kiếm", 4);
+                        inputvalue = stringmodifine.Inputlimittext("Tìm kiếm theo mã hàng hoán\nNhập giá trị tìm kiếm", 4).ToUpper();
                         foreach (Item eachItem in data.ItemsList)
                         {
                             if (Check.FindValue(inputvalue, eachItem.Id, false))
@@ -321,19 +324,86 @@ namespace ManageStore
         // Thao tác Lô Hàng
         public static void EditPackaged(ref Store data)
         {
-            Console.WriteLine("đang làm");
-        }
+            Print.EndSeparate();
+            Console.WriteLine("Thay đổi thông tin lô hàng".ToUpper());
+            bool show = true;
+            while (show)
+            {
+                Console.WriteLine("Chọn chức năng:1\n Sửa đổi thông tin theo mã lô hàng\n2. Thoát");
+                int userChoose = stringmodifine.Inputnumber("chọn chức năng (1~2): ", 1, 2);
+                switch (userChoose)
+                {
+                    case 2:
+                        show = false;
+                        Print.EndSeparate();
+                        break;
+                    case 1:
+                        string idOfItem = stringmodifine.Inputlimittext("Mã lô hàng bạn muốn thay đổi",4);
+                        bool checkId = Check.Duplicatecheckid(idOfItem, data.ItemsList);
+                        while (checkId==false) //kiểm tra nhập mã sản phẩm
+                        {
+                            Console.WriteLine("Mã sản phẩm không tồn tại, vui lòng kiểm tra lại");
+                            Print.PrintTable("Danh sách lô hàng trong kho",data);
+                            idOfItem = stringmodifine.Inputlimittext("Mã lô hàng bạn muốn thay đổi (4 ký tự)",4);
+                            checkId = Check.Duplicatecheckid(idOfItem, data.ItemsList);
+                        }
 
-        // dang doi ham replace, remove va find.
-        // public static void updateLabel(ref Store data)
-        // {
-        //     Console.WriteLine("Các mã hàng hiện tại:");
-        //     for (int i = 0; i < data.Label.Length; i++)
-        //     {
-        //         string text = $"{i+1}. {data.Label[i]}";
-        //     }
-        //     
-        // }
+                        int idPackaged = 0;
+                        for (int i = 0; i < data.ItemsList.Length; i++)
+                        {
+                            Item currentItem = data.ItemsList[i];
+                            if (Check.FindValue(idOfItem, currentItem.Id, false))
+                            {
+                                idPackaged = i;
+                                break;
+                            }
+                        }
+                        Console.WriteLine("Thông tin bạn muốn thay đổi:\n1. Tên sản phẩm\n2. Công Ty" +
+                                          "\n3. Số lượng\n4. Ngày sản xuất và Hạn dùng\n5. Loại Hàng\n6. Thoát");
+                        int editChoose = stringmodifine.Inputnumber("Chọn chức năng (1~7)", 1, 7);
+                        switch (editChoose)
+                        {
+                            case 1:
+                                Console.WriteLine($"Tên sản phẩm hiện tại: {data.ItemsList[idPackaged].Name}");
+                                Console.Write("Tên mới của sản phẩm: ");
+                                data.ItemsList[idPackaged].Name = Console.ReadLine()!.ToUpper();
+                                break;
+                            case 2:
+                                Console.WriteLine($"Tên công ty sản xuất hiện tại: {data.ItemsList[idPackaged].Com}");
+                                Console.Write("Tên công ty sản xuất mới: ");
+                                data.ItemsList[idPackaged].Com = Console.ReadLine()!.ToUpper();
+                                break;
+                            case 3:
+                                Console.WriteLine($"Số lượng sản phẩm hiện tại của lô hàng: {data.ItemsList[idPackaged].Qty}");
+                                // Console.Write("Tên công ty sản xuất mới: ");
+                                data.ItemsList[idPackaged].Qty = stringmodifine.Inputnumber("Số lượng sản phẩm: ",0,10000);
+                                break;
+                            case 4:
+                                Console.WriteLine($"Ngày sản xuất: {Print.DateString(data.ItemsList[idPackaged].Mfg)}-Hạn Dùng:{Print.DateString(data.ItemsList[idPackaged].Exp)} ");
+                                Console.Write("Ngày sản xuất mới của lô hàng: ");
+                                data.ItemsList[idPackaged].Mfg = stringmodifine.InputDate();
+                                data.ItemsList[idPackaged].Exp = stringmodifine.Inputexp("Hạn dùng(số tháng)",
+                                    data.ItemsList[idPackaged].Mfg);
+                                break;
+                            case 5:
+                                Console.WriteLine($"Tên Loại sản phẩm của lô hàng hiện tại: {data.ItemsList[idPackaged].Type}");
+                                // Console.Write("Tên công ty sản xuất mới: ");
+                                data.ItemsList[idPackaged].Type = ArrayManipulate.SelectLabel("Loại hàng hóa mới: ",data);
+                                break;
+                            case 6:
+                                show = false;
+                                break;
+                        }
+                        Print.MidSeparate();
+                        Console.WriteLine("Thông tin lô hàng sau khi thay đổi");
+                        Print.PrintInfItem(data.ItemsList[idPackaged]);
+
+                        break;
+                        
+                }
+            }
+        }
+        
         public static void AddNewPackaged(ref Store data)
         {
             Print.EndSeparate();
@@ -342,7 +412,7 @@ namespace ManageStore
             bool show = true;
             while (show)
             {
-                Console.WriteLine("Chức năng:\n2. Thoát");
+                Console.WriteLine("Chức năng:\n1. Nhập lô hàng mới\n2. Thoát");
                 int userchoose = stringmodifine.Inputnumber("Chọn chức năng: ", 1, 3);
                 switch (userchoose)
                 {

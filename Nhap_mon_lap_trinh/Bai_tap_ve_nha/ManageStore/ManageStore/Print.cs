@@ -77,8 +77,8 @@ namespace ManageStore
             id = FixFormatTableText(anItem.Id, Limitmsp);
             name = FixFormatTableText(anItem.Name, Limitth);
             qty = FixFormatTableText(anItem.Qty.ToString(), Limitsl);
-            exp = FixFormatTableText(stringmodifine.DateString(anItem.Exp), Limithd);
-            mfg = FixFormatTableText(stringmodifine.DateString(anItem.Mfg), Limitsx);
+            exp = FixFormatTableText(DateString(anItem.Exp), Limithd);
+            mfg = FixFormatTableText(DateString(anItem.Mfg), Limitsx);
             com = FixFormatTableText(anItem.Com, Limitcty);
             type = FixFormatTableText(anItem.Type, Limitlh);
             Console.WriteLine($"| {id} | {name} | {qty} | {exp} | {mfg} | {com} | {type} |");
@@ -90,17 +90,17 @@ namespace ManageStore
             id = anItem.Id;
             name = anItem.Name;
             qty = anItem.Qty.ToString();
-            exp = stringmodifine.DateString(anItem.Exp);
-            mfg = stringmodifine.DateString(anItem.Mfg);
+            exp = DateString(anItem.Exp);
+            mfg = DateString(anItem.Mfg);
             com = anItem.Com;
             type = anItem.Type;
             Console.WriteLine($"| Mã SP: {id} | Tên: {name} | Số lượng: {qty} | HD: {exp} | NSX: {mfg} | Cty SX: {com} | Loại hàng: {type} |");
         }
 
-        public static void PrintTable(string TableName, Store data)
+        public static void PrintTable(string tableName, Store data)
                 {
                     EndSeparate();
-                    Console.WriteLine($"BẢNG: {TableName.ToUpper()}");
+                    Console.WriteLine($"BẢNG: {tableName.ToUpper()}");
                     HeaderTable();
                     int noitems = data.ItemsList.Length;
                     switch (noitems)
@@ -124,14 +124,18 @@ namespace ManageStore
             Console.WriteLine($"{row1}\n{row2}\n{row3}\n{row4}");
         }
 
-        public static void PrintElementArray(string note, string[] Array)
+        public static void PrintElementArray(string note, string[] array)
         {
             Console.WriteLine(note);
-            for (int i = 0; i < Array.Length; i++)
+            for (int i = 0; i < array.Length; i++)
             {
-                Console.WriteLine($"{i + 1}. {Array[i]}");
+                Console.WriteLine($"{i + 1}. {array[i]}");
             }
         }
-        
+        public static string DateString(Date a) /*in dinh dang ngay thang cho du lieu struct Date*/
+        {
+            var textdate = $"{a.Month:00}/{a.Year:00}";
+            return textdate;
+        }
     }
 }

@@ -1,5 +1,3 @@
-using System;
-
 namespace ManageStore
 {
     public class Check
