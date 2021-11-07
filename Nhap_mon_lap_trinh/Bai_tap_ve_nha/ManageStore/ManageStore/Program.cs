@@ -11,6 +11,7 @@ namespace ManageStore
             // test create data
             Console.Clear();
             Print.FirstNote();
+            Print.Instruction();
             Store warehouse = new Store();
             Function.CreateFirstData(ref warehouse);
             // Print.PrintTable("Danh Sách lô hàng trong kho",warehouse);
@@ -23,9 +24,12 @@ namespace ManageStore
             bool show = true;
             while (show)
             {
+                Print.EndSeparate();
                 Print.PrintTable("Danh Sách lô hàng trong kho",warehouse);
-                Console.WriteLine("Lựa chọn chức năng:\n1. Nhập Hàng\n2. Tìm Hàng\n3. Thay đổi thông tin hàng\n4. Xóa lô hàng\n5. Hướng dẫn sử dụng\n6. Thoát");
-                int userchoose = stringmodifine.Inputnumber("Lựa chọn chức năng (1~5): ",1,5);
+                Console.WriteLine("Chức năng chính".ToUpper());
+                Print.MidSeparate();
+                Console.WriteLine("Chức năng:\n1. Tạo mới\n2. Tìm thông tin\n3. Thay đổi thông tin\n4. Xóa\n5. Hướng dẫn sử dụng\n6. Thoát");
+                int userchoose = stringmodifine.Inputnumber("chức năng",1,6);
                 switch (userchoose)
                 {
                     case 1://nhap hang
@@ -43,13 +47,13 @@ namespace ManageStore
                         break;
                     case 5:
                         Print.MidSeparate();
-                        Console.WriteLine("Hướng dẫn sử dụng");
+                        Print.Instruction();
                         break;
                     case 6:
                         show = false;
                         Print.EndSeparate();
                         Print.EndSeparate();
-                        Console.WriteLine("Kết thúc phần mềm");
+                        Console.WriteLine("Kết thúc phần mềm - Cảm ơn đã sử dụng".ToUpper());
                         Print.FirstNote();
                         Print.EndSeparate();
                         break;

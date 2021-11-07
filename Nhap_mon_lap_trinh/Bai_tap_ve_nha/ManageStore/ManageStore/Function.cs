@@ -8,7 +8,7 @@ namespace ManageStore
         public static void CreateFirstData(ref Store data)
         {
             Print.EndSeparate();
-            bool auto = stringmodifine.Inputyn("Bạn có muốn tạo dữ liệu mẫu:(y/n): ");
+            bool auto = stringmodifine.ChooseYesNo("Bạn có muốn tạo dữ liệu mẫu?");
             //setup bắt đầu
             switch (auto)
             {
@@ -47,7 +47,7 @@ namespace ManageStore
                     }
 
                     //2nd tao hang hoa nhap kho
-                    int noPackagedmanual = stringmodifine.Inputnumber("Số lô hàng bạn muốn nhập kho: ", 1, 100);
+                    int noPackagedmanual = stringmodifine.Inputnumber("Số lô hàng bạn muốn nhập kho", 1, 100);
                     data.ItemsList = new Item[noPackagedmanual];
                     for (int j = 0; j < noPackagedmanual; j++)
                     {
@@ -65,9 +65,7 @@ namespace ManageStore
         {
             Print.EndSeparate();
             Console.WriteLine("Tìm lô hàng".ToUpper());
-            Print.MidSeparate();
             Store result;
-            result.ItemsList = new Item[0];
             result.Label = data.Label;
             bool show = true;
             while (show)
@@ -75,15 +73,17 @@ namespace ManageStore
                 Print.MidSeparate();
                 Console.WriteLine("Các chức năng tìm kiếm:\n1. Mã sản phầm\n2. Tên sản phẩm\n3. Loại hàng hóa\n4. Công ty sản xuất\n5. Thoát");
                 Print.MidSeparate();
-                int userchoise = stringmodifine.Inputnumber("Lựa chọn của bạn (1~4)", 1, 4);
+                int userchoise = stringmodifine.Inputnumber("chức năng", 1, 5);
                 string inputvalue;
                 bool fistletter;
                 string input;
+                result.ItemsList = new Item[0];
                 switch (userchoise)
                 {
                     case 1: // tim kiem theo mã hàng
-                        //Console.Write("Nhập giá trị tìm kiếm theo mã hàng hóa (4 ký tự)");
-                        inputvalue = stringmodifine.Inputlimittext("Tìm kiếm theo mã hàng hoán\nNhập giá trị tìm kiếm", 4).ToUpper();
+                        Print.MidSeparate();
+                        Console.WriteLine("Chức năng: Tìm kiếm theo mã lô hàng");
+                        inputvalue = stringmodifine.Inputlimittext("Nhập giá trị tìm kiếm", 4).ToUpper();
                         foreach (Item eachItem in data.ItemsList)
                         {
                             if (Check.FindValue(inputvalue, eachItem.Id, false))
@@ -99,21 +99,28 @@ namespace ManageStore
                         {
                             Print.PrintTable("Kết quả tìm kiếm",result);
                         }
+
+                        // result.ItemsList = new Item[0];
                         break;
                     case 2: //Tim kiem theo ten san pham
-                        Console.WriteLine("Tìm kiếm theo tên sản phẩm");
+                        Print.MidSeparate();
+                        Console.WriteLine("Chức năng: Tìm kiếm theo tên sản phẩm");
                         Console.WriteLine(
                             "Chọn phương pháp tìm kiếm:\n1. Tìm theo ký tự\n2. Tìm theo viết tắt ký tự đầu mỗi từ");
-                        int method = stringmodifine.Inputnumber("Phương pháp (1~2): ", 1, 2);
+                        int method = stringmodifine.Inputnumber("Phương pháp tìm kiếm", 1, 2);
                         switch (method)
                         {
                             case 2:
+                                Print.MidSeparate();
+                                Console.WriteLine("Chức năng: Tìm theo ký tự viết tắt đầu mỗi từ");
                                 fistletter = true;
-                                Console.Write("Vui lòng nhập các ký tự đầu của mỗi từ không khoản cách: ");
+                                Console.Write("Giá trị cần tìm kiếm: ");
                                 break;
                             default:
+                                Print.MidSeparate();
+                                Console.WriteLine("Chức năng: Tìm theo ký tự");
                                 fistletter = false;
-                                Console.Write("Vui lòng nhập giá trị bạn muốn tìm kiếm: ");
+                                Console.Write("Giá trị cần tìm kiếm: ");
                                 break;
                         }
                         input = Console.ReadLine()!.ToUpper();
@@ -135,6 +142,7 @@ namespace ManageStore
 
                         break;
                     case 3: //Tim kiem theo loai hang
+                        Print.MidSeparate();
                         Console.WriteLine("Tìm kiếm theo loại hàng");
                         Console.WriteLine("Các loại hàng trong kho:");
                         for (int i = 0; i < data.Label.Length; i++)
@@ -142,7 +150,7 @@ namespace ManageStore
                             Console.WriteLine($"{i + 1}. {data.Label[i]}");
                         }
 
-                        int choose = stringmodifine.Inputnumber($"Giá trị lựa chọn (1~{data.Label.Length})", 1,
+                        int choose = stringmodifine.Inputnumber("loại hàng cần tìm", 1,
                             data.Label.Length);
                         string inputlabel = data.Label[choose - 1];
                         foreach (Item eachItem in data.ItemsList)
@@ -163,10 +171,11 @@ namespace ManageStore
 
                         break;
                     case 4:
-                        Console.WriteLine("Tìm kiếm theo tên sản phẩm");
+                        Print.MidSeparate();
+                        Console.WriteLine("Tìm kiếm theo tên công ty sản ");
                         Console.WriteLine(
                             "Chọn phương pháp tìm kiếm:\n1. Tìm theo ký tự\n2. Tìm theo viết tắt ký tự đầu mỗi từ");
-                        method = stringmodifine.Inputnumber("Phương pháp (1~2): ", 1, 2);
+                        method = stringmodifine.Inputnumber("Phương pháp tìm kiếm", 1, 2);
                         switch (method)
                         {
                             case 2:
@@ -218,7 +227,7 @@ namespace ManageStore
             while (show)
             {
                 Console.WriteLine("Các lệnh sửa đổi loại hàng:\n1. Thêm\n2. Sửa\n3. Xóa\n4. Thoát");
-                int userchoise = stringmodifine.Inputnumber("Lựa chọn (1~4): ", 1, 4);
+                int userchoise = stringmodifine.Inputnumber("chức năng", 1, 4);
                 Print.MidSeparate();
                 switch (userchoise)
                 {
@@ -244,7 +253,7 @@ namespace ManageStore
                         break;
                     case 2: // Sua doi ten label va kiem tra items tu do
                         Console.WriteLine("Việc sửa đổi tên loại hàng sẽ thay đổi tên loại hàng các lô hàng có tên loại hàng tương ứng");
-                        bool changeShow = stringmodifine.Inputyn("Bạn có muốn tiếp tục thực hiện thay đổi?");
+                        bool changeShow = stringmodifine.ChooseYesNo("Bạn có muốn tiếp tục thực hiện thay đổi?");
                         while (changeShow)
                         {
                             string labelchoise = ArrayManipulate.SelectLabel("Lựa chọn loại hàng hóa muốn thay đổi", data);
@@ -275,14 +284,14 @@ namespace ManageStore
                                     break;
                             }
                             Console.WriteLine("Bạn có muốn tiếp tục thay đổi loại hàng khác?");
-                            changeShow = stringmodifine.Inputyn("Bạn có muốn tiếp tục thay đổi loại hàng khác?");
+                            changeShow = stringmodifine.ChooseYesNo("Bạn có muốn tiếp tục thay đổi loại hàng khác?");
 
                         }
 
                         break;
                     case 3: //xoa ten va kiem tra neu co cac mat hang trung ten se canh bao va xoa toan bo
                         Console.WriteLine("Việc xoá loại hàng sẽ khiến cho các lô hàng có tên loại hàng tương ứng bị xóa");
-                        bool changeShowRemove = stringmodifine.Inputyn("Bạn có muốn tiếp tục thực hiện thay đổi?");
+                        bool changeShowRemove = stringmodifine.ChooseYesNo("Bạn có muốn tiếp tục thực hiện thay đổi?");
                         while (changeShowRemove)
                         {
                             string labelchoise = ArrayManipulate.SelectLabel("Lựa chọn loại hàng hóa muốn thay đổi: ", data);
@@ -309,7 +318,7 @@ namespace ManageStore
                                     ArrayManipulate.RemoveString(ref data.Label,labelchoise);
                                     break;
                             }
-                            changeShowRemove = stringmodifine.Inputyn("Bạn có muốn tiếp tục thay đổi loại hàng khác?");
+                            changeShowRemove = stringmodifine.ChooseYesNo("Bạn có muốn tiếp tục thay đổi loại hàng khác?");
 
                         }
                         break;
@@ -329,8 +338,8 @@ namespace ManageStore
             bool show = true;
             while (show)
             {
-                Console.WriteLine("Chọn chức năng:1\n Sửa đổi thông tin theo mã lô hàng\n2. Thoát");
-                int userChoose = stringmodifine.Inputnumber("chọn chức năng (1~2): ", 1, 2);
+                Console.WriteLine("Chọn chức năng:\n1. Sửa đổi thông tin theo mã lô hàng\n2. Thoát");
+                int userChoose = stringmodifine.Inputnumber("chức năng", 1, 2);
                 switch (userChoose)
                 {
                     case 2:
@@ -360,7 +369,7 @@ namespace ManageStore
                         }
                         Console.WriteLine("Thông tin bạn muốn thay đổi:\n1. Tên sản phẩm\n2. Công Ty" +
                                           "\n3. Số lượng\n4. Ngày sản xuất và Hạn dùng\n5. Loại Hàng\n6. Thoát");
-                        int editChoose = stringmodifine.Inputnumber("Chọn chức năng (1~7)", 1, 7);
+                        int editChoose = stringmodifine.Inputnumber("chức năng (1~7)", 1, 7);
                         switch (editChoose)
                         {
                             case 1:
@@ -407,17 +416,17 @@ namespace ManageStore
         public static void AddNewPackaged(ref Store data)
         {
             Print.EndSeparate();
-            Console.WriteLine("Thêm hàng");
+            Console.WriteLine("Nhập lô hàng mới vào kho".ToUpper());
             Print.MidSeparate();
             bool show = true;
             while (show)
             {
                 Console.WriteLine("Chức năng:\n1. Nhập lô hàng mới\n2. Thoát");
-                int userchoose = stringmodifine.Inputnumber("Chọn chức năng: ", 1, 3);
+                int userchoose = stringmodifine.Inputnumber("chức năng", 1, 2);
                 switch (userchoose)
                 {
                     case 1:
-                        int noNewPackaged = stringmodifine.Inputnumber("Số lô hàng mới cần nhập kho: ", 1, 10);
+                        int noNewPackaged = stringmodifine.Inputnumber("Số lô hàng mới cần nhập kho", 1, 10);
                         ArrayManipulate.InsertMultiItem(ref data,noNewPackaged);
                         break;
                     case 2:
@@ -431,12 +440,13 @@ namespace ManageStore
         public static void ChangeInf(ref Store data)
         {
             Print.EndSeparate();
-            Console.WriteLine("Thay đổi thông tin");
+            Console.WriteLine("Thay đổi thông tin".ToUpper());
+            Print.MidSeparate();
             bool show = true;
             while (show)
             {
-                Console.WriteLine("Thay đổi thông tin:\n1.Lô hàng\n2.Loại sản phẩm\n3. Thoát");
-                int userchoose = stringmodifine.Inputnumber("Lựa chọn chức năng (1~3):", 1, 3);
+                Console.WriteLine("Các thông tin có thể thay đổi:\n1. Lô hàng\n2. Loại sản phẩm\n3. Thoát");
+                int userchoose = stringmodifine.Inputnumber("thông tin cần thay đổi", 1, 3);
                 switch (userchoose)
                 {
                     case 1:
@@ -457,16 +467,17 @@ namespace ManageStore
         {
             Print.EndSeparate();
             Console.WriteLine("Xóa dữ liệu".ToUpper());
+            Print.MidSeparate();
             bool show = true;
             while (show)
             {
-                Console.WriteLine("Chức Năng:\n1. Xóa theo mã sản phẩm\n2. Theo nhóm loại hàng\n3. Thoát");
-                int userchoose = stringmodifine.Inputnumber("Lựa chọn (1~3)", 1, 3);
+                Console.WriteLine("Chức Năng xóa:\n1. Mã sản phẩm\n2. Theo nhóm loại hàng\n3. Thoát");
+                int userchoose = stringmodifine.Inputnumber("chức năng", 1, 3);
                 switch (userchoose)
                 {
                     case 1://xóa theo nhóm mã sản phẩm
                         Print.MidSeparate();
-                        string text = $"Bạn cần xoá bao nhiêu lô hàng? (1~{data.ItemsList.Length}) ";
+                        string text = $"số lô hàng cần xóa";
                         int noRemove= stringmodifine.Inputnumber(text, 1, data.ItemsList.Length);
                         string[] listIdRemove = new string[noRemove];
                         for (int i = 0; i < listIdRemove.Length; i++)
@@ -483,6 +494,7 @@ namespace ManageStore
                                 }
                             }
                         }
+                        ArrayManipulate.RemoveItem(ref data.ItemsList,listIdRemove);
                         
                         
                         break;
@@ -515,7 +527,7 @@ namespace ManageStore
                                     ArrayManipulate.RemoveString(ref data.Label,chooseLabel);
                                     break;
                             }
-                            changeShowRemove = stringmodifine.Inputyn("Bạn có muốn tiếp tục xóa loại hàng khác?");
+                            changeShowRemove = stringmodifine.ChooseYesNo("Bạn có muốn tiếp tục xóa loại hàng khác?");
 
                         }
                         break;

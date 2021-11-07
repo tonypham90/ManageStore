@@ -40,7 +40,7 @@ namespace ManageStore
             switch (firstlettereachword)
             { 
                 case false:
-                    for (int i = 0; i < intext.Length-valuelookup.Length; i++)
+                    for (int i = 0; i < intext.Length-valuelookup.Length+1; i++)
                     {
                         textcompare = null;
                         if (intext[i]==valuelookup[0])
@@ -52,9 +52,10 @@ namespace ManageStore
                             }
                         }
 
-                        content = textcompare == valuelookup;
-                        if (content)
+                        
+                        if (textcompare == valuelookup)
                         {
+                            content = true;
                             break;
                         }
                     }

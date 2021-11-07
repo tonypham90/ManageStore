@@ -24,7 +24,7 @@ namespace ManageStore
             //     else
             //         Console.WriteLine("Your input may be higher 12 or lower 0, please input againt");
             // }
-            int month = Inputnumber("Tháng (1~12): ", 1, 12);
+            int month = Inputnumber("Tháng", 1, 12);
 
             // ReSharper disable once ConditionIsAlwaysTrueOrFalse
             // ReSharper disable once LoopVariableIsNeverChangedInsideLoop
@@ -51,6 +51,7 @@ namespace ManageStore
 //cố định giá trị string được nhập vào
         public static string Inputlimittext(string ghichu, int limit)
         {
+            Print.MidSeparate();
             Console.Write($"{ghichu}({limit} ký tự): ");
             string input = Console.ReadLine()!.ToUpper();
             while (input.Length != limit)
@@ -67,15 +68,15 @@ namespace ManageStore
         //in dinh dang ngay thang
         
 
-        public static int Inputnumber(string note,int min,int max)
+        public static int Inputnumber(string functionName,int min,int max)
         {
-            Console.Write(note);
+            Console.Write($"Chọn {functionName.ToLower()} ({min}~{max}): ");
             string input;
             input = Console.ReadLine();
             bool check = int.TryParse(input,out var value);
             while (check == false||min>value||value>max)
             {
-                Console.Write($"Vui lòng nhập đúng giá trị trong khoản {min}~{max}");
+                Console.Write($"Vui lòng nhập đúng giá trị trong khoản {min}~{max}: ");
                 input = Console.ReadLine();
                 check = int.TryParse(input,out value);
             }
@@ -84,10 +85,10 @@ namespace ManageStore
 
         } //Gioi han nhap gia tri
 
-        public static bool Inputyn(string note)
+        public static bool ChooseYesNo(string note)
         {
-            Console.Write(note);
-            string input = Console.ReadLine()?.ToLower();
+            Console.Write($"{note} (y/n): ");
+            string input = Console.ReadLine()!.ToLower();
             bool check,choise;
             switch (input)
             {
@@ -134,7 +135,7 @@ namespace ManageStore
         {
             Console.WriteLine(note);
             Date exp;
-            int expmonth = Inputnumber("Giá trị từ 1~100: ", 1, 100);
+            int expmonth = Inputnumber("số tháng sử dụng", 1, 100);
             int totalmonth = (expmonth + mfg.Month);
             exp.Month = totalmonth % 12;
             exp.Year = totalmonth / 12+mfg.Year;
