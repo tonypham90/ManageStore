@@ -2,7 +2,7 @@ namespace ManageStore
 {
     public struct Item
     {
-        public string Id; /*Mã sản phẩm*/
+        public string Id; /*Mã lô hàng*/
         public string Name; /*Tên sản phẩm*/
         public int Qty; /*So luong san pham*/
         public Date Exp; /*Hạn sử dụng*/

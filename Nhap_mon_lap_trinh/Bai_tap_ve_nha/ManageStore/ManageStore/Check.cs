@@ -31,29 +31,29 @@ namespace ManageStore
             return check;
         }
         // tim ky tu
-        public static bool FindValue(string valuelookup, string intext, bool firstlettereachword)
+        public static bool FindValue(string valueLookup, string inText, bool firstLetterEachWord)
         {
             bool content = false;
             string textcompare;
-            valuelookup = valuelookup.ToUpper();
-            intext = intext.ToUpper();
-            switch (firstlettereachword)
+            valueLookup = valueLookup.ToUpper();
+            inText = inText.ToUpper();
+            switch (firstLetterEachWord)
             { 
                 case false:
-                    for (int i = 0; i < intext.Length-valuelookup.Length+1; i++)
+                    for (int i = 0; i < inText.Length-valueLookup.Length+1; i++)
                     {
                         textcompare = null;
-                        if (intext[i]==valuelookup[0])
+                        if (inText[i]==valueLookup[0])
                         {
                             
-                            for (int j = 0; j < valuelookup.Length; j++)
+                            for (int j = 0; j < valueLookup.Length; j++)
                             {
-                                textcompare += intext[i+j];
+                                textcompare += inText[i+j];
                             }
                         }
 
                         
-                        if (textcompare == valuelookup)
+                        if (textcompare == valueLookup)
                         {
                             content = true;
                             break;
@@ -61,23 +61,23 @@ namespace ManageStore
                     }
                     break;
                 case true:
-                    string[] listword = intext.Split(" ");
+                    string[] listword = inText.Split(" ");
                     string textfirstletter = null;
-                    foreach (var word in listword)
+                    foreach (string word in listword)
                     {
                         textfirstletter += word[0].ToString();
                     }
-                    for (int i = 0; i < textfirstletter.Length-valuelookup.Length; i++)
+                    for (int i = 0; i < textfirstletter.Length-valueLookup.Length+1; i++)
                     {
                         textcompare = null;
-                        if (textfirstletter[i]==valuelookup[0])
+                        if (textfirstletter[i]==valueLookup[0])
                         {
-                            for (int j = 0; j < valuelookup.Length; j++)
+                            for (int j = 0; j < valueLookup.Length; j++)
                             {
                                 textcompare += textfirstletter[i+j];
                             }
                         }
-                        content = textcompare == valuelookup;
+                        content = textcompare == valueLookup;
                         if (content)
                         {
                             break;
@@ -88,7 +88,19 @@ namespace ManageStore
 
             return content;
         }
-        
+        public static bool DuplicatecheckString(string value, string[] array)
+        {
+            int count = 0;
+            bool check = false;
+            if (array != null)
+                foreach (string element in array)
+                    if (element == value)
+                        count += 1;
+
+            if (count > 0) check = true;
+
+            return check;
+        }
 
     }
 }

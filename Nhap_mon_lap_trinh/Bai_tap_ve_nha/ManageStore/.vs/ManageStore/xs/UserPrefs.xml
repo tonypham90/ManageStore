@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{BDC18B70-974E-4622-8EDF-934FFAEB133C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ManageStore/Program.cs">
+    <Files>
+      <File FileName="ManageStore/Program.cs" Line="5" Column="20" />
+    </Files>
+    <Pads>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="ManageStore" expanded="True">
+            <Node name="ManageStore" expanded="True">
+              <Node name="ManageStore" expanded="True">
+                <Node name="ManageStore.Program" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ManageStore PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

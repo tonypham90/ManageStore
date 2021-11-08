@@ -7,32 +7,39 @@ namespace ManageStore
         // Nhap gia tri vao
         public static Item InputItem(string ghichu, Store warehouse, bool auto)
         {
-                    Print.MidSeparate();
-                    var item = new Item();
-                    Console.WriteLine(ghichu);
-                    if (auto)
-                    {
-                        item = Sample.RandItem("Tạo hàng tự động", warehouse);
-                    }
-                    else
-                    {
-                        Console.Write("1. Mã Sản Phẩm: ");
-                        item.Id = Sample.RanId(warehouse.ItemsList);
-                        Console.Write(item.Id);
-                        item.Type = SelectLabel("\n2. Loại sản phẩm: ",warehouse);
-                        Console.Write("3. Tên sản phẩm: ");
-                        item.Name = Console.ReadLine()!.ToUpper();
-                        Console.Write("4. Số lượng: ");
-                        item.Qty = int.Parse(Console.ReadLine()!);
-                        Console.WriteLine("5. Ngày sản xuất: ");
-                        item.Mfg = stringmodifine.InputDate();
-                        item.Exp = stringmodifine.Inputexp("Số tháng sử dụng",item.Mfg);
-                        Console.Write("Công ty: ");
-                        item.Com = Console.ReadLine()!;
-                    }
-        
-                    return item;
-                }
+            Item item = new Item();
+            Console.WriteLine(ghichu);
+            if (auto)
+            {
+                item = Sample.RandItem("Tạo hàng tự động", warehouse);
+            }
+            else
+            {
+                Print.ShortSeparate();
+                Console.Write("B1. Mã lô hàng: ");
+                item.Id = Sample.RanId(warehouse.ItemsList);
+                Console.Write(item.Id);
+                Print.ShortSeparate();
+                item.Type = SelectLabel("\nB2. Chọn loại sản phẩm: ",warehouse);
+                Print.ShortSeparate();
+                Console.Write("B3. Tên sản phẩm: ");
+                item.Name = Console.ReadLine()!.ToUpper();
+                Print.ShortSeparate();
+                Console.Write("B4. Số lượng: ");
+                item.Qty = int.Parse(Console.ReadLine()!);
+                Print.ShortSeparate();
+                Console.WriteLine("B5. Ngày sản xuất: ");
+                item.Mfg = stringmodifine.InputDate();
+                item.Exp = stringmodifine.Inputexp("Số tháng sử dụng",item.Mfg);
+                Print.ShortSeparate();
+                Console.Write("B6. Công ty: ");
+                item.Com = Console.ReadLine()!;
+            }
+            Console.Write("Đã thêm lô hàng:");
+            Print.PrintInfItem(item);
+
+            return item;
+        }
         //control chon lable
         public static string SelectLabel(string note, Store data)
         {

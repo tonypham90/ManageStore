@@ -4,8 +4,6 @@ namespace ManageStore
 {
     public class stringmodifine
     {
-        
-        
         public static Date InputDate()
         {
             int year = 0;
@@ -13,7 +11,7 @@ namespace ManageStore
             bool checkYear = false;
             // ReSharper disable once ConditionIsAlwaysTrueOrFalse
             // ReSharper disable once LoopVariableIsNeverChangedInsideLoop
-            
+
             // while (checkMonth == false)
             // {
             //     Console.WriteLine("Month(1~12): ");
@@ -47,12 +45,12 @@ namespace ManageStore
             date.Year = year;
             return date;
         }
-        
+
 //cố định giá trị string được nhập vào
         public static string Inputlimittext(string ghichu, int limit)
         {
             Print.MidSeparate();
-            Console.Write($"{ghichu}({limit} ký tự): ");
+            Console.Write($"{ghichu} ({limit} ký tự): ");
             string input = Console.ReadLine()!.ToUpper();
             while (input.Length != limit)
             {
@@ -63,33 +61,32 @@ namespace ManageStore
 
             return input;
         }
-        
+
 
         //in dinh dang ngay thang
-        
 
-        public static int Inputnumber(string functionName,int min,int max)
+
+        public static int Inputnumber(string functionName, int min, int max)
         {
             Console.Write($"Chọn {functionName.ToLower()} ({min}~{max}): ");
             string input;
             input = Console.ReadLine();
-            bool check = int.TryParse(input,out var value);
-            while (check == false||min>value||value>max)
+            bool check = int.TryParse(input, out var value);
+            while (check == false || min > value || value > max)
             {
                 Console.Write($"Vui lòng nhập đúng giá trị trong khoản {min}~{max}: ");
                 input = Console.ReadLine();
-                check = int.TryParse(input,out value);
+                check = int.TryParse(input, out value);
             }
 
             return value;
-
         } //Gioi han nhap gia tri
 
         public static bool ChooseYesNo(string note)
         {
             Console.Write($"{note} (y/n): ");
             string input = Console.ReadLine()!.ToLower();
-            bool check,choise;
+            bool check, choise;
             switch (input)
             {
                 case "y":
@@ -102,9 +99,10 @@ namespace ManageStore
                     check = false;
                     break;
             }
+
             while (check == false)
             {
-                Console.Write("Vui lòng nhập đúng giá trị y:Đồng ý, n: từ chối: ");
+                Console.Write("Vui lòng nhập đúng giá trị y: Đồng ý, n: Từ chối: ");
                 input = Console.ReadLine()?.ToLower();
                 switch (input)
                 {
@@ -125,11 +123,11 @@ namespace ManageStore
                 default:
                     choise = false;
                     break;
-                    
             }
 
             return choise;
         }
+
         //Nhap gia tri han su dung theo so thang
         public static Date Inputexp(string note, Date mfg)
         {
@@ -138,7 +136,7 @@ namespace ManageStore
             int expmonth = Inputnumber("số tháng sử dụng", 1, 100);
             int totalmonth = (expmonth + mfg.Month);
             exp.Month = totalmonth % 12;
-            exp.Year = totalmonth / 12+mfg.Year;
+            exp.Year = totalmonth / 12 + mfg.Year;
             return exp;
         }
 
@@ -146,9 +144,8 @@ namespace ManageStore
         {
             for (int i = 0; i < array.Length; i++)
             {
-                Console.WriteLine($"{i+1}. {array[i]}");
+                Console.WriteLine($"{i + 1}. {array[i]}");
             }
         }
-
     }
 }

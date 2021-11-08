@@ -11,7 +11,7 @@ namespace ManageStore
         private protected static string[] Food = { "Chuối".ToUpper(), "Sữa", "Trứng", "Cà phê", "Mì gói" };
 
         private protected static string[] Electric =
-            { "Điện Thoại Di Động", "Labtop", "Tủ lạnh", "Tivi", "Điều hòa nhiệt độ" };
+            { "Điện Thoại Di Động", "Laptop", "Tủ lạnh", "Tivi", "Điều hòa nhiệt độ" };
 
         private protected static string[] Equitment = { "Chổi", "chén", "máy hút bụi", "cây lau nhà", "bùi nhùi" };
 
