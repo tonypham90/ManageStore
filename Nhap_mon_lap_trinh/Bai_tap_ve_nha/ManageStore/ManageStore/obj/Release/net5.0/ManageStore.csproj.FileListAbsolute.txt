@@ -1,0 +1,15 @@
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/ManageStore/ManageStore/bin/Release/net5.0/ManageStore.deps.json
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/ManageStore/ManageStore/bin/Release/net5.0/ManageStore.runtimeconfig.json
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/ManageStore/ManageStore/bin/Release/net5.0/ManageStore.runtimeconfig.dev.json
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/ManageStore/ManageStore/bin/Release/net5.0/ManageStore.dll
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/ManageStore/ManageStore/bin/Release/net5.0/ref/ManageStore.dll
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/ManageStore/ManageStore/bin/Release/net5.0/ManageStore.pdb
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/ManageStore/ManageStore/obj/Release/net5.0/ManageStore.csproj.AssemblyReference.cache
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/ManageStore/ManageStore/obj/Release/net5.0/ManageStore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/ManageStore/ManageStore/obj/Release/net5.0/ManageStore.AssemblyInfoInputs.cache
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/ManageStore/ManageStore/obj/Release/net5.0/ManageStore.AssemblyInfo.cs
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/ManageStore/ManageStore/obj/Release/net5.0/ManageStore.csproj.CoreCompileInputs.cache
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/ManageStore/ManageStore/obj/Release/net5.0/ManageStore.dll
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/ManageStore/ManageStore/obj/Release/net5.0/ref/ManageStore.dll
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/ManageStore/ManageStore/obj/Release/net5.0/ManageStore.pdb
+/Users/tonypham/RiderProjects/khoahoctunhien/Nhap_mon_lap_trinh/Bai_tap_ve_nha/ManageStore/ManageStore/obj/Release/net5.0/ManageStore.genruntimeconfig.cache
