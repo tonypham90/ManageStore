@@ -313,13 +313,13 @@ namespace ManageStore
                         break;
                     case 1:
                         string idOfItem = stringmodifine.Inputlimittext("Mã lô hàng bạn muốn thay đổi", 4);
-                        bool checkId = Check.Duplicatecheckid(idOfItem, data.ItemsList);
+                        bool checkId = Check.DuplicateCheckId(idOfItem, data.ItemsList);
                         while (checkId == false) //kiểm tra nhập Mã lô hàng
                         {
                             Console.WriteLine("Mã lô hàng không tồn tại, vui lòng kiểm tra lại");
                             Print.PrintTable("Danh sách lô hàng trong kho", data);
                             idOfItem = stringmodifine.Inputlimittext("Mã lô hàng bạn muốn thay đổi (4 ký tự)", 4);
-                            checkId = Check.Duplicatecheckid(idOfItem, data.ItemsList);
+                            checkId = Check.DuplicateCheckId(idOfItem, data.ItemsList);
                         }
 
                         int idPackaged = 0;
@@ -496,7 +496,7 @@ namespace ManageStore
                                 {
                                     listIdRemove[i] =
                                         stringmodifine.Inputlimittext($"Mã lô hàng thứ {i + 1} cần xóa", 4);
-                                    check = Check.Duplicatecheckid(listIdRemove[i], data.ItemsList);
+                                    check = Check.DuplicateCheckId(listIdRemove[i], data.ItemsList);
 
                                     if (check == false)
                                     {

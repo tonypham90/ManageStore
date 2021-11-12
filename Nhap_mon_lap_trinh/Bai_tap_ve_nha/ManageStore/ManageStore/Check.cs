@@ -3,7 +3,7 @@ namespace ManageStore
     public class Check
     {
         //kiem tra gia tri trung lap
-        public static bool Duplicatecheckid(string value, Item[] items)
+        public static bool DuplicateCheckId(string value, Item[] items)
         {
             int count = 0;
             bool check = false;

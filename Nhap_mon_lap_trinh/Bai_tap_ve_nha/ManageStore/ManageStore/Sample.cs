@@ -32,7 +32,7 @@ namespace ManageStore
                     newid += Chars[index];
                 }
 
-                duplicateCheck = Check.Duplicatecheckid(newid, items);
+                duplicateCheck = Check.DuplicateCheckId(newid, items);
             }
 
             return newid;

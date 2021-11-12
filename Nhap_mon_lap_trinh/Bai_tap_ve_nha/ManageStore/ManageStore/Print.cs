@@ -147,13 +147,23 @@ namespace ManageStore
 
             Console.WriteLine("Hướng dẫn sử dụng".ToUpper() +
                               "\n Quy trình tạo mới: Tạo danh sách loại hàng -> Nhập hàng mới vào kho (Có chức năng tạo hàng mẫu tự động và tạo hàng thủ công)" +
-                              "\n1. Tạo mới: Tạo lô hàng mới vào kho; có 2 chức năng là tạo tự động và tạo thủ công" +
-                              "\n2. Tìm thông tin: Chức năng tìm kiếm thông tin lô hàng theo các ký tự đầu mỗi từ hoặc chuỗi ký tự" +
-                              "\n3. Thay đổi thông tin: Thay đổi thông tin của từng lô hàng hoặc theo thông tin loại hàng (ngoại trừ mã hàng không được thay đổi)" +
-                              "\n - Đối với thay đổi thông tin loại hàng có thể xóa hoặc tạo mới loại hàng" +
-                              "\n - Việc xóa loại hàng sẽ khiến các các mặt hàng cùng loại hàng sẽ bị xóa theo nên trước khi xóa loại hàng cần chuyển các mặt hàng qua loại hàng mới" +
-                              "\n4. Xóa: Xóa lô hàng đang có trong kho" +
-                              "\n - Nên lưu ý xóa loại hàng sẽ khiến các mặt hàng cùng loại hàng bị xóa theo");
+                              "\n1. Tạo mới: " +
+                              "\n- Tạo lô hàng mới vào kho" +
+                              "\n- Tạo mới loại hàng" +
+                              "\n2. Tìm thông tin: Chức năng tìm kiếm thông tin lô hàng theo các ký tự đầu mỗi từ hoặc chuỗi ký tự:" +
+                              "\n- Mã lô hàng" +
+                              "\n- Tên sản phẩm" +
+                              "\n- Tên công ty" +
+                              "\n- Loại hàng (Chỉ tìm kiếm theo loại hàng theo các loại hàng đang có)" +
+                              "\n3. Thay đổi thông tin: " +
+                              "\n- Theo Lô hàng: hay đổi thông tin của từng lô hàng hoặc theo thông tin loại hàng (ngoại trừ mã hàng không được thay đổi)" +
+                              "\n- Theo loại hàng: " +
+                              "\n * Đối với thay đổi thông tin loại hàng có thể xóa hoặc tạo mới loại hàng" +
+                              "\n * Việc xóa loại hàng sẽ khiến các các mặt hàng cùng loại hàng sẽ bị xóa theo nên trước khi xóa loại hàng cần chuyển các mặt hàng qua loại hàng mới" +
+                              "\n4. Xóa: " +
+                              "\n - Lô hàng đang có trong kho" +
+                              "\n - Loại hàng đang có" +
+                              "\n !!! Lưu ý: Xóa loại hàng sẽ khiến các mặt hàng cùng loại hàng bị xóa theo");
         }
 
         public static void ShortSeparate()
