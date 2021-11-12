@@ -54,7 +54,8 @@ namespace ManageStore
             string input = Console.ReadLine()!.ToUpper();
             while (input.Length != limit)
             {
-                Console.WriteLine($"Vui lòng nhập {limit} ký tự: ");
+                Console.WriteLine($"Giá trị nhiều hơn hoặc ít hơn {limit} ký tự");
+                Console.WriteLine($"Vui lòng nhập {limit} ký tự");
                 Console.Write("Giá trị: ");
                 input = Console.ReadLine()!.ToUpper();
             }
@@ -68,10 +69,10 @@ namespace ManageStore
 
         public static int Inputnumber(string functionName, int min, int max)
         {
-            Console.Write($"Chọn {functionName.ToLower()} ({min}~{max}): ");
+            Console.Write($"{functionName} ({min}~{max}): ");
             string input;
             input = Console.ReadLine();
-            bool check = int.TryParse(input, out var value);
+            bool check = int.TryParse(input, out int value);
             while (check == false || min > value || value > max)
             {
                 Console.Write($"Vui lòng nhập đúng giá trị trong khoản {min}~{max}: ");
@@ -129,23 +130,20 @@ namespace ManageStore
         }
 
         //Nhap gia tri han su dung theo so thang
-        public static Date Inputexp(string note, Date mfg)
+        public static Date Inputexp(Date mfg)
         {
-            Console.WriteLine(note);
             Date exp;
-            int expmonth = Inputnumber("số tháng sử dụng", 1, 100);
-            int totalmonth = (expmonth + mfg.Month);
+            int expmonth = Inputnumber("Số tháng sử dụng", 1, 100);
+            int totalmonth = expmonth + mfg.Month;
             exp.Month = totalmonth % 12;
             exp.Year = totalmonth / 12 + mfg.Year;
+            if (exp.Month == 0) exp.Month = 1;
             return exp;
         }
 
         public static void PrintStringArray(string[] array)
         {
-            for (int i = 0; i < array.Length; i++)
-            {
-                Console.WriteLine($"{i + 1}. {array[i]}");
-            }
+            for (int i = 0; i < array.Length; i++) Console.WriteLine($"{i + 1}. {array[i]}");
         }
     }
 }

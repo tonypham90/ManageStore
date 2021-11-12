@@ -31,6 +31,7 @@ namespace ManageStore
                     int index = Ran.Next(0, Chars.Length);
                     newid += Chars[index];
                 }
+
                 duplicateCheck = Check.Duplicatecheckid(newid, items);
             }
 
@@ -79,15 +80,15 @@ namespace ManageStore
 
         public static Item RandItem(string note, Store warehouse)
         {
-            var id = new string[warehouse.ItemsList.Length];
+            string[] id = new string[warehouse.ItemsList.Length];
             Item packaged;
-            var indexofelement = 0;
-            foreach (var item in warehouse.ItemsList)
+            int indexofelement = 0;
+            foreach (Item item in warehouse.ItemsList)
             {
                 id[indexofelement] = item.Id;
                 indexofelement += 1;
             }
-            
+
             // Console.WriteLine(note);
             packaged.Id = RanId(warehouse.ItemsList);
             // Console.WriteLine($"Mã hàng: {packaged.Id}");
@@ -95,11 +96,12 @@ namespace ManageStore
             // Console.WriteLine($"Loại Hàng:  {packaged.Type}");
             packaged.Name = RandName(packaged.Type);
             packaged.Qty = Ran.Next(1, 100);
-            packaged.Mfg.Month = Ran.Next(1,13);
+            packaged.Mfg.Month = Ran.Next(1, 13);
             packaged.Mfg.Year = Ran.Next(19, 21);
             packaged.Exp = RandDate(packaged.Mfg);
             packaged.Com = RandItemDetail(Brand);
-            Console.WriteLine($"{note}\nMã Hàng: {packaged.Id}, Tên Hàng: {packaged.Name}, Số lượng: {packaged.Qty}, Ngày sản xuất:{Print.DateString(packaged.Mfg)}, Hạn Dùng:{Print.DateString(packaged.Exp)} , Công ty: {packaged.Com}, Loại Hàng {packaged.Type}");
+            Console.WriteLine(
+                $"{note}\nMã Hàng: {packaged.Id}, Tên Hàng: {packaged.Name}, Số lượng: {packaged.Qty}, Ngày sản xuất:{Print.DateString(packaged.Mfg)}, Hạn Dùng:{Print.DateString(packaged.Exp)} , Công ty: {packaged.Com}, Loại Hàng {packaged.Type}");
 
             return packaged;
         }

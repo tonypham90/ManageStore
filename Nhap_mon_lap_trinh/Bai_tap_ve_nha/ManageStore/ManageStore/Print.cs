@@ -11,26 +11,28 @@ namespace ManageStore
             Limithd = 10,
             Limitsx = 11,
             Limitlh = 11,
-            Limitcty = 20;  
+            Limitcty = 20;
+
         // Header Table format
         public static void EndSeparate()
         {
             string dast = null;
-            int     countdast = Limitcty + Limithd + Limitlh + Limitmsp + Limitsl + Limitsx + Limitth + 3 * 8-2;
-            for (int i = 0; i < countdast; i++) dast += "~";
+            var countdast = Limitcty + Limithd + Limitlh + Limitmsp + Limitsl + Limitsx + Limitth + 3 * 8 - 2;
+            for (var i = 0; i < countdast; i++) dast += "~";
             Console.WriteLine(dast);
         }
+
         // seperate midle function
         public static void MidSeparate()
         {
             string dast = null;
-            var countdast = (Limitcty + Limithd + Limitlh + Limitmsp + Limitsl + Limitsx + Limitth + 3 * 8-2)/2;
+            var countdast = (Limitcty + Limithd + Limitlh + Limitmsp + Limitsl + Limitsx + Limitth + 3 * 8 - 2) / 2;
             for (var i = 0; i < countdast; i++) dast += "~";
             Console.WriteLine(dast);
         }
-        
+
         //Printout format table
-        
+
 
         public static void HeaderTable()
         {
@@ -48,23 +50,23 @@ namespace ManageStore
             Console.WriteLine(text);
             EndSeparate();
         }
-        
+
         //cố định định dạng bảng khi in kết quả ra trong bảng
         public static string FixFormatTableText(string field, int limitChar)
         {
             // Gioi han so luong ky tu in;
             string texta = null;
-            var limit = Math.Min(field.Length, limitChar);
+            int limit = Math.Min(field.Length, limitChar);
             if (limit < limitChar)
             {
-                for (var i = 0; i < field.Length; i++) texta += field[i].ToString();
+                for (int i = 0; i < field.Length; i++) texta += field[i].ToString();
 
                 // ReSharper disable once PossibleNullReferenceException
                 while (texta.Length < limitChar) texta += " ";
             }
             else
             {
-                for (var i = 0; i < limitChar; i++) texta += field[i].ToString();
+                for (int i = 0; i < limitChar; i++) texta += field[i].ToString();
             }
 
             return texta;
@@ -94,25 +96,28 @@ namespace ManageStore
             mfg = DateString(anItem.Mfg);
             com = anItem.Com;
             type = anItem.Type;
-            Console.WriteLine($"| Mã SP: {id} | Tên: {name} | Số lượng: {qty} | HD: {exp} | NSX: {mfg} | Cty SX: {com} | Loại hàng: {type} |");
+            Console.WriteLine(
+                $"| Mã lô hàng: {id} | Tên: {name} | Số lượng: {qty} | HD: {exp} | NSX: {mfg} | Cty SX: {com} | Loại hàng: {type} |");
         }
 
         public static void PrintTable(string tableName, Store data)
-                {
-                    EndSeparate();
-                    Console.WriteLine($"BẢNG: {tableName.ToUpper()}");
-                    HeaderTable();
-                    int noitems = data.ItemsList.Length;
-                    switch (noitems)
-                    {
-                        case 0:
-                            break;
-                        default:
-                            foreach (var item in data.ItemsList) PrintRowItem(item);
-                            break;
-                    }
-                    EndSeparate();
-                }
+        {
+            EndSeparate();
+            Console.WriteLine($"BẢNG: {tableName.ToUpper()}");
+            HeaderTable();
+            int noitems = data.ItemsList.Length;
+            switch (noitems)
+            {
+                case 0:
+                    break;
+                default:
+                    foreach (Item item in data.ItemsList) PrintRowItem(item);
+                    break;
+            }
+
+            EndSeparate();
+        }
+
         //Print first note
         public static void FirstNote()
         {
@@ -127,21 +132,19 @@ namespace ManageStore
         public static void PrintElementArray(string note, string[] array)
         {
             Console.WriteLine(note);
-            for (int i = 0; i < array.Length; i++)
-            {
-                Console.WriteLine($"{i + 1}. {array[i]}");
-            }
+            for (int i = 0; i < array.Length; i++) Console.WriteLine($"{i + 1}. {array[i]}");
         }
+
         public static string DateString(Date a) /*in dinh dang ngay thang cho du lieu struct Date*/
         {
-            var textdate = $"{a.Month:00}/{a.Year:00}";
+            string textdate = $"{a.Month:00}/{a.Year:00}";
             return textdate;
         }
 
         public static void Instruction()
         {
             EndSeparate();
-            
+
             Console.WriteLine("Hướng dẫn sử dụng".ToUpper() +
                               "\n Quy trình tạo mới: Tạo danh sách loại hàng -> Nhập hàng mới vào kho (Có chức năng tạo hàng mẫu tự động và tạo hàng thủ công)" +
                               "\n1. Tạo mới: Tạo lô hàng mới vào kho; có 2 chức năng là tạo tự động và tạo thủ công" +
@@ -152,12 +155,13 @@ namespace ManageStore
                               "\n4. Xóa: Xóa lô hàng đang có trong kho" +
                               "\n - Nên lưu ý xóa loại hàng sẽ khiến các mặt hàng cùng loại hàng bị xóa theo");
         }
+
         public static void ShortSeparate()
         {
             string dast = null;
-            var countdast = (Limitcty + Limithd + Limitlh + Limitmsp + Limitsl + Limitsx + Limitth + 3 * 8-2)/4;
-            for (var i = 0; i < countdast; i++) dast += "~";
+            int countdast = (Limitcty + Limithd + Limitlh + Limitmsp + Limitsl + Limitsx + Limitth + 3 * 8 - 2) / 4;
+            for (int i = 0; i < countdast; i++) dast += "~";
             Console.WriteLine(dast);
         }
     }
-}      
+}
